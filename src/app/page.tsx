@@ -7,6 +7,9 @@ import {
   AccordionContent,
 } from "@/components/ui/accordion";
 import Hero from "@/components/hero";
+import Banner from "@/components/banner";
+import ServicesHeader from "@/components/services/header";
+import ServicesBody from "@/components/services/body";
 
 export default function Home() {
   return (
@@ -14,91 +17,14 @@ export default function Home() {
       <section className="w-full bg-white pt-8 pb-2 flex justify-center">
         <Hero />
       </section>
-      {/* Banner section (butterfly woman background) */}
       <section className="relative w-full">
-        <div className="w-full h-48 md:h-64 flex items-center justify-center overflow-hidden relative">
-          <Image
-            src="https://ext.same-assets.com/1332691435/4117865777.jpeg"
-            alt="Banner mariposa"
-            fill
-            className="object-cover object-center brightness-90"
-            style={{ zIndex: 0 }}
-            priority
-          />
-          <span className="relative z-10 py-3 px-6 bg-white/80 rounded-xl shadow text-xl md:text-2xl font-bold text-center">
-            Si lo deseas, te acompañamos en tu camino
-          </span>
-        </div>
+        <Banner />
       </section>
-      {/* Servicios section */}
       <section className="w-full py-12 bg-white flex flex-col items-center">
-        <div className="max-w-4xl w-full text-center px-4">
-          <h2 className="font-bold text-lg md:text-xl mb-6">
-            Terapia con profesionales que entienden lo que vives
-          </h2>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-6">
-            <div className="flex-shrink-0 w-48 h-44 relative">
-              <Image
-                src="https://ext.same-assets.com/1332691435/1843696397.jpeg"
-                alt="Mujer en terapia"
-                fill
-                className="rounded-lg object-cover shadow"
-              />
-            </div>
-            <div className="text-left md:text-base text-sm px-2 max-w-lg">
-              Detrás de esta plataforma hay{" "}
-              <span className="text-brand-brown font-medium">
-                psicoterapeutas y especialistas seleccionados
-              </span>{" "}
-              por su experiencia en duelo, sensibilidad y formación.
-              <br />
-              Es un espacio único para quienes hayan pasado pérdidas de vida,
-              con guías que acompañan el proceso personal de reconstrucción de
-              sentido.
-            </div>
-          </div>
-        </div>
-        {/* Cómo te ayudaremos */}
-        <div className="max-w-4xl w-full mt-14 px-4">
-          <h3 className="text-xl font-extrabold text-center mb-3">
-            CÓMO TE AYUDAREMOS
-          </h3>
-          <p className="text-center text-brand-gold mb-7">
-            con <b>TERAPIA GRUPAL</b>: En 12 semanas descubrirás 3 cosas…
-          </p>
-          <div className="flex flex-col md:flex-row gap-7 items-center justify-center">
-            {/* Acompañamiento */}
-            <div className="flex-1 flex flex-col items-center text-center gap-2">
-              <Image
-                src="https://ext.same-assets.com/1332691435/2681452056.png"
-                alt="Acompañamiento"
-                width={88}
-                height={88}
-              />
-              <h4 className="font-semibold">Acompañamiento</h4>
-              <p className="text-sm">
-                Grupos apoyados por especialistas que entienden tu
-                proceso. Avanzarás a tu ritmo, sintiendo pertenencia y escucha
-                verdadera.
-              </p>
-            </div>
-            {/* Conexión */}
-            <div className="flex-1 flex flex-col items-center text-center gap-2">
-              <Image
-                src="https://ext.same-assets.com/1332691435/3296664310.jpeg"
-                alt="Conexión"
-                width={88}
-                height={88}
-              />
-              <h4 className="font-semibold">Conexión</h4>
-              <p className="text-sm">
-                Transformarás tu visión del duelo y aprenderás a encontrar
-                nuevos vínculos y propósitos desde la memoria y el amor.
-              </p>
-            </div>
-          </div>
-        </div>
+        <ServicesHeader />
+        <ServicesBody />
       </section>
+
       {/* Testimonial, Talleres y Seminarios section */}
       <section className="w-full bg-brand-sand py-10 px-4 flex flex-col items-center">
         <blockquote className="max-w-3xl italic text-lg font-medium text-brand-brown border-l-4 border-brand-gold pl-6 mb-6">
