@@ -10,6 +10,7 @@ import Hero from "@/components/hero";
 import Banner from "@/components/banner";
 import ServicesHeader from "@/components/services/header";
 import ServicesBody from "@/components/services/body";
+import WorkshopsHeader from "@/components/workshops/header";
 
 export default function Home() {
   return (
@@ -26,8 +27,9 @@ export default function Home() {
       </section>
 
       {/* Testimonial, Talleres y Seminarios section */}
-      <section className="w-full bg-brand-sand py-10 px-4 flex flex-col items-center">
-        <blockquote className="max-w-3xl italic text-lg font-medium text-brand-brown border-l-4 border-brand-gold pl-6 mb-6">
+      <section className="w-full py-10 px-4 flex flex-col items-center justify-center">
+        <WorkshopsHeader />
+        {/* <blockquote className="max-w-3xl italic text-lg font-medium text-brand-brown border-l-4 border-brand-gold pl-6 mb-6">
           “Ampliar nuestra CONSCIENCIA sobre la vida y la muerte es el mejor
           consuelo al que podemos aspirar”
           <br />{" "}
@@ -74,7 +76,7 @@ export default function Home() {
           >
             <a href="#">MÁS INFO SOBRE TALLERES Y SEMINARIOS</a>
           </Button>
-        </div>
+        </div> */}
       </section>
       {/* Próximo seminario section */}
       <section className="w-full bg-white py-8 px-4 flex flex-col items-center">

@@ -86,7 +86,7 @@
   }
 
   body {
-    @apply font-montserrat bg-brand-beige text-brand-dark;
+    @apply font-montserrat text-brand-dark;
   }
 }
 
