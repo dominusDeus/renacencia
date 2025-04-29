@@ -12,20 +12,14 @@ const WorkshopsHeader = () => {
         terapia personalizadas con especialistas en duelo
       </p>
       <div className="flex flex-col gap-1">
-        <Button
-          asChild
-          className="bg-green-600 hover:bg-green-700 text-start text-white text-base px-8 py-6 rounded-lg font-semibold max-w-[327px]  md:max-w-[90%] overflow-hidden"
-        >
+        <Button className="py-6 px-5 justify-start bg-green-600 hover:bg-green-700 text-white text-base rounded-lg font-semibold max-w-[327px] w-full">
           <Link
-            className="overflow-hidden truncate"
             href="https://api.whatsapp.com/send/?phone=34624840232&text=Hola+viacosmos%2C+me+interesa+la+sesi%C3%B3n+de+terapia+grupal&type=phone_number&app_absent=0"
+            className="block truncate w-[calc(327px-2rem)] font-opensans"
           >
             AGENDA TU ENTREVISTA GRATUITA DE VALORACION
           </Link>
         </Button>
-        <span className="mt-1 text-sm text-gray-600 text-center">
-          Próximo Seminario Online Gratuito: 30/05/25
-        </span>
       </div>
     </div>
   );
