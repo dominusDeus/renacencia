@@ -3,20 +3,23 @@ import { Button } from "../ui/button";
 
 const WorkshopsHeader = () => {
   return (
-    <div className="w-full flex flex-col gap-6 items-center">
-      <div className="md:text-5xl text-3xl font-bold">
+    <div className="w-full flex flex-col text-[32px] gap-6 items-center">
+      <div className="md:text-5xl text-[32PX] font-bold text-center">
         ¿Necesitas un espacio más íntimo?
       </div>
-      <p className="">
+      <p className="text-base text-center font-opensans italic">
         Si sientes que aún no es tiempo de abrirte al grupo, pide sesiones de
         terapia personalizadas con especialistas en duelo
       </p>
       <div className="flex flex-col gap-1">
         <Button
           asChild
-          className="bg-green-600 hover:bg-green-700 text-white text-base px-8 py-6 rounded-lg font-semibold max-w-[327px] truncate md:max-w-[90%]"
+          className="bg-green-600 hover:bg-green-700 text-start text-white text-base px-8 py-6 rounded-lg font-semibold max-w-[327px]  md:max-w-[90%] overflow-hidden"
         >
-          <Link href="https://api.whatsapp.com/send/?phone=34624840232&text=Hola+viacosmos%2C+me+interesa+la+sesi%C3%B3n+de+terapia+grupal&type=phone_number&app_absent=0">
+          <Link
+            className="overflow-hidden truncate"
+            href="https://api.whatsapp.com/send/?phone=34624840232&text=Hola+viacosmos%2C+me+interesa+la+sesi%C3%B3n+de+terapia+grupal&type=phone_number&app_absent=0"
+          >
             AGENDA TU ENTREVISTA GRATUITA DE VALORACION
           </Link>
         </Button>

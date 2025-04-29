@@ -14,20 +14,20 @@ import WorkshopsHeader from "@/components/workshops/header";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-0 w-full min-h-screen">
-      <section className="w-full bg-white pt-8 pb-2 flex justify-center">
+    <main className="flex flex-col gap-0 w-full min-h-screen overflow-x-hidden">
+      <section className="w-full bg-white pt-0 md:py-5 flex justify-center">
         <Hero />
       </section>
       <section className="relative w-full">
         <Banner />
       </section>
-      <section className="w-full py-12 bg-white flex flex-col items-center">
+      <section className="w-full pt-12 px-6 bg-white flex flex-col items-center">
         <ServicesHeader />
         <ServicesBody />
       </section>
 
       {/* Testimonial, Talleres y Seminarios section */}
-      <section className="w-full py-10 px-4 flex flex-col items-center justify-center">
+      <section className="w-full px-4 pt-4 flex flex-col items-center justify-center">
         <WorkshopsHeader />
         {/* <blockquote className="max-w-3xl italic text-lg font-medium text-brand-brown border-l-4 border-brand-gold pl-6 mb-6">
           “Ampliar nuestra CONSCIENCIA sobre la vida y la muerte es el mejor
