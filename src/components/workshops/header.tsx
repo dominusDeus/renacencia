@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 const WorkshopsHeader = () => {
   return (
     <div className="w-full flex flex-col gap-6 items-center">
-      <div className="text-5xl font-bold">
+      <div className="md:text-5xl text-3xl font-bold">
         ¿Necesitas un espacio más íntimo?
       </div>
       <p className="">
@@ -14,7 +14,7 @@ const WorkshopsHeader = () => {
       <div className="flex flex-col gap-1">
         <Button
           asChild
-          className="bg-green-600 hover:bg-green-700 text-white text-base px-8 py-6 rounded-lg font-semibold"
+          className="bg-green-600 hover:bg-green-700 text-white text-base px-8 py-6 rounded-lg font-semibold max-w-[327px] truncate md:max-w-[90%]"
         >
           <Link href="https://api.whatsapp.com/send/?phone=34624840232&text=Hola+viacosmos%2C+me+interesa+la+sesi%C3%B3n+de+terapia+grupal&type=phone_number&app_absent=0">
             AGENDA TU ENTREVISTA GRATUITA DE VALORACION
