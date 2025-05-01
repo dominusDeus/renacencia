@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import HeroImage from "../public/images/hero-img.png";
+import HeroImage from "../../public/images/hero-img.png";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -41,7 +42,12 @@ const Hero = () => {
             asChild
             className=" bg-green-600 hover:bg-green-700 text-white text-base px-4 py-2 font-opensans rounded-md font-semibold max-w-xs"
           >
-            <a href="#">INSCRÍBETE AL SEMINARIO GRATUITO</a>
+            <Link
+              href="https://api.whatsapp.com/send/?phone=34624840232&text=Hola%20viacosmos%2C%20me%20interesar%C3%ADa%20inscribirme%20al%20seminario%20gratuito&type=phone_number&app_absent=0"
+              className="block truncate w-[calc(327px-2rem)] font-opensans"
+            >
+              INSCRÍBETE AL SEMINARIO GRATUITO
+            </Link>
           </Button>
           <span className="mt-1 text-sm text-gray-600">
             Próximo Seminario Online Gratuito: 30/05/25

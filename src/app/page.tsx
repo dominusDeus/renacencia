@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import {
   Accordion,
   AccordionItem,
@@ -11,6 +10,8 @@ import Banner from "@/components/banner";
 import ServicesHeader from "@/components/services/header";
 import ServicesBody from "@/components/services/body";
 import WorkshopsHeader from "@/components/workshops/header";
+import WorkShopsBody from "@/components/workshops/body";
+import Timeline2 from "@/components/timeline-2";
 
 export default function Home() {
   return (
@@ -27,56 +28,12 @@ export default function Home() {
       </section>
 
       {/* Testimonial, Talleres y Seminarios section */}
-      <section className="w-full px-4 pt-4 flex flex-col items-center justify-center">
+      <section className="w-full px-6 pt-4 flex flex-col items-center justify-center">
         <WorkshopsHeader />
-        {/* <blockquote className="max-w-3xl italic text-lg font-medium text-brand-brown border-l-4 border-brand-gold pl-6 mb-6">
-          “Ampliar nuestra CONSCIENCIA sobre la vida y la muerte es el mejor
-          consuelo al que podemos aspirar”
-          <br />{" "}
-          <span className="text-xs not-italic">
-            Grupo local Renacencia y Bienamare
-          </span>
-        </blockquote>
-        <div className="w-full max-w-4xl text-center">
-          <h3 className="font-bold text-xl mb-8">
-            Algunos de Nuestros TALLERES Y SEMINARIOS
-          </h3>
-          <div className="grid md:grid-cols-3 gap-7 mb-8">
-            <div className="bg-white rounded-xl shadow p-4 flex flex-col gap-2 items-center">
-              <h4 className="font-semibold text-brand-brown">
-                Eleva la mirada
-              </h4>
-              <p className="text-sm">
-                Crecimiento personal, percepciones, meditación y expansión de
-                consciencia.
-              </p>
-            </div>
-            <div className="bg-white rounded-xl shadow p-4 flex flex-col gap-2 items-center">
-              <h4 className="font-semibold text-brand-brown">
-                Círculo de Ancestros
-              </h4>
-              <p className="text-sm">
-                Espacio de homenaje y conexión con quienes partieron antes, para
-                encontrar sentido a nuestro paso en la tierra.
-              </p>
-            </div>
-            <div className="bg-white rounded-xl shadow p-4 flex flex-col gap-2 items-center">
-              <h4 className="font-semibold text-brand-brown">
-                Alquimia del dolor y el temor
-              </h4>
-              <p className="text-sm">
-                Recuperar sentido, transformar la experiencia de la muerte y la
-                tristeza.
-              </p>
-            </div>
-          </div>
-          <Button
-            asChild
-            className="bg-green-600 hover:bg-green-700 text-white font-bold px-7 py-2 rounded-lg mt-2"
-          >
-            <a href="#">MÁS INFO SOBRE TALLERES Y SEMINARIOS</a>
-          </Button>
-        </div> */}
+        <WorkShopsBody />
+      </section>
+      <section>
+        <Timeline2 />
       </section>
       {/* Próximo seminario section */}
       <section className="w-full bg-white py-8 px-4 flex flex-col items-center">
@@ -143,7 +100,7 @@ export default function Home() {
         <div className="max-w-3xl w-full space-y-3 text-center">
           <h4 className="text-2xl font-bold mb-3">¿Cómo Surgió Renacencia?</h4>
           <p className="text-base md:text-lg">
-            Desde niña, la muerte me ha fascinado y desafiado a la vez. Tras el
+            Desde niño, la muerte me ha fascinado y desafiado a la vez. Tras el
             duelo, nació la pregunta: "¿Cómo continuar cuando quienes más amamos
             ya no están?" Así surge este espacio de acompañamiento, con el
             anhelo de transformar el dolor en sentido, de reconstrucción y

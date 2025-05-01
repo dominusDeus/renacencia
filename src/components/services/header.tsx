@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import ShadowWoman from "../../public/images/shadow-woman.png";
+import ShadowWoman from "../../../public/images/shadow-woman.png";
 const ServicesHeader = () => {
   return (
     // <section className="w-full py-12 bg-white flex flex-col items-center">

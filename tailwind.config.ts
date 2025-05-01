@@ -63,6 +63,10 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        timeline: {
+          bg: "hsl(var(--timeline-bg))",
+          border: "hsl(var(--timeline-border))",
+        },
 
         // Added custom brand colors
         brand: {
