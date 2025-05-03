@@ -12,6 +12,7 @@ import ServicesBody from "@/components/services/body";
 import WorkshopsHeader from "@/components/workshops/header";
 import WorkShopsBody from "@/components/workshops/body";
 import Timeline2 from "@/components/timeline-2";
+import FreeResouces from "@/components/free-resources";
 
 export default function Home() {
   return (
@@ -32,86 +33,27 @@ export default function Home() {
         <WorkshopsHeader />
         <WorkShopsBody />
       </section>
-      <section>
+      <section className=" px-6 py-10">
         <Timeline2 />
       </section>
-      {/* Próximo seminario section */}
-      <section className="w-full bg-white py-8 px-4 flex flex-col items-center">
-        <div className="max-w-2xl text-center flex flex-col gap-2">
-          <h4 className="text-lg font-bold uppercase mb-2">
-            PRÓXIMAMENTE SEMINARIO GRATUITO ONLINE CON CONTENIDO DE CALIDAD PARA
+      {/* ANNOUNCEMENT */}
+      <section className="w-full bg-white py-10 px-6 md:px-72 flex flex-col items-center">
+        <div className="text-center flex flex-col gap-4 font-montserrat text-[20px] md:text-[27px] font-bold">
+          <h4 className=" uppercase">
+            PROXIMAMENTE SEMINARIO GRATUITO ONLINE CON CONTENIDO DE CALIDAD PARA
             TODO PÚBLICO
           </h4>
-          <div className="text-base">
-            <b>
-              (30/05/2025 - 19.30hs España - 14.30 (Arg/Uru) duración: 1.20hs.)
-            </b>
+          <div>
+            (30/05/2025 - 19.30hs España - 14.30 (Arg/Uru) duración: 1.20hs.
           </div>
-          <span className="mt-2 block text-lg font-bold text-brand-rose">
+          <span className="mt-2 block font-bold ">
             TEMA: El manejo de las emociones en el duelo.
           </span>
         </div>
       </section>
-      {/* Recursos gratuitos */}
-      <section className="w-full bg-brand-brown py-10 px-4">
-        <div className="max-w-4xl mx-auto">
-          <h3 className="text-2xl font-bold text-white mb-8">
-            También: Recursos Gratuitos a tu alcance
-          </h3>
-          <div className="grid md:grid-cols-4 gap-6">
-            <div className="bg-white bg-opacity-90 rounded-lg shadow p-5 flex flex-col items-center gap-3">
-              <span className="text-xl text-brand-brown font-bold">
-                Artículos
-              </span>
-              <span className="block text-brand-dark text-center text-sm">
-                Textos y reflexiones para acompañarte en tu proceso.
-              </span>
-            </div>
-            <div className="bg-white bg-opacity-90 rounded-lg shadow p-5 flex flex-col items-center gap-3">
-              <span className="text-xl text-brand-brown font-bold">
-                Videoteca
-              </span>
-              <span className="block text-brand-dark text-center text-sm">
-                Videos y recursos visuales para explorar el duelo y la
-                consciencia.
-              </span>
-            </div>
-            <div className="bg-white bg-opacity-90 rounded-lg shadow p-5 flex flex-col items-center gap-3">
-              <span className="text-xl text-brand-brown font-bold">
-                Seminarios
-              </span>
-              <span className="block text-brand-dark text-center text-sm">
-                Clases disponibles, formaciones y encuentros gratuitos.
-              </span>
-            </div>
-            <div className="bg-white bg-opacity-90 rounded-lg shadow p-5 flex flex-col items-center gap-3">
-              <span className="text-xl text-brand-brown font-bold">
-                Descargables
-              </span>
-              <span className="block text-brand-dark text-center text-sm">
-                Guías para ayudarte a lidiar con la pérdida.
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* About / Origen section (no blurred face) */}
-      <section className="bg-brand-sand py-12 px-4 flex flex-col items-center">
-        <div className="max-w-3xl w-full space-y-3 text-center">
-          <h4 className="text-2xl font-bold mb-3">¿Cómo Surgió Renacencia?</h4>
-          <p className="text-base md:text-lg">
-            Desde niño, la muerte me ha fascinado y desafiado a la vez. Tras el
-            duelo, nació la pregunta: "¿Cómo continuar cuando quienes más amamos
-            ya no están?" Así surge este espacio de acompañamiento, con el
-            anhelo de transformar el dolor en sentido, de reconstrucción y
-            esperanza.
-          </p>
-          <p className="text-base md:text-lg">
-            Ahora, con profesionales de la psicología y estudiosos del camino,
-            creamos RENACENCIA, desde Hermosura y acompañamiento a quienes nos
-            necesiten.
-          </p>
-        </div>
+
+      <section className="w-full">
+        <FreeResouces />
       </section>
       {/* Preguntas Frecuentes section */}
       <section className="w-full bg-white py-10 px-4 flex flex-col items-center">

@@ -13,40 +13,40 @@ export default function Timeline2() {
       icon: <Moon className="w-6 h-6" />,
       title: "Eleva la mirada",
       description: (
-        <div>
+        <>
           "Nos encaminamos a{" "}
           <span className="font-bold">acceder a una nueva percepción, </span>
           mediante reflexiones, comprensiones y meditación."
-        </div>
+        </>
       ),
     },
     {
       icon: <Sun className="w-6 h-6" />,
       title: "Círculo de Ancestros",
       description: (
-        <div>
+        <>
           "Honrar a quien partió es hacer de nuestra vida una obra de amor.
           Buscaremos
           <span className="font-bold"> crear un puente de conexión </span>
           entre la vida y la muerte."
-        </div>
+        </>
       ),
     },
     {
       icon: <Flame className="w-6 h-6" />,
       title: "Alquimia del dolor y el temor",
       description: (
-        <div>
+        <>
           "Recorre la sabiduría antigua para transmutar{" "}
           <span className="font-bold">el dolor </span>
           en gratitud y consciencia."
-        </div>
+        </>
       ),
     },
   ];
 
   return (
-    <div className="w-full max-w-4xl mx-auto px-4 py-8">
+    <div className="w-full max-w-4xl mx-auto">
       <h2 className="text-2xl font-bold text-center mb-12">
         Algunos de Nuestros TALLERES Y SEMINARIOS
       </h2>
