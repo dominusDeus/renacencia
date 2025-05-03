@@ -67,6 +67,9 @@ export default {
           bg: "hsl(var(--timeline-bg))",
           border: "hsl(var(--timeline-border))",
         },
+        footer: {
+          bg: "hsl(var(--footer-bg))",
+        },
 
         // Added custom brand colors
         brand: {

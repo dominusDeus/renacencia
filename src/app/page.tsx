@@ -1,10 +1,3 @@
-import Image from "next/image";
-import {
-  Accordion,
-  AccordionItem,
-  AccordionTrigger,
-  AccordionContent,
-} from "@/components/ui/accordion";
 import Hero from "@/components/hero";
 import Banner from "@/components/banner";
 import ServicesHeader from "@/components/services/header";
@@ -14,6 +7,7 @@ import WorkShopsBody from "@/components/workshops/body";
 import Timeline2 from "@/components/timeline-2";
 import FreeResouces from "@/components/free-resources";
 import Faq from "@/components/faq";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -60,42 +54,7 @@ export default function Home() {
       <section className="w-full bg-white py-10 px-4 flex flex-col items-center">
         <Faq />
       </section>
-      {/* Footer */}
-      <footer className="w-full bg-brand-brown pt-10 pb-2 px-4 mt-auto">
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="flex flex-col gap-2 text-white">
-            <span className="font-bold">Contacto</span>
-            <span className="text-sm">
-              <span className="font-semibold">Whatsapp</span> <br />
-              +34 123 456 789
-            </span>
-            <span className="text-sm">
-              <span className="font-semibold">Redes Sociales</span> <br />
-              Instagram | Facebook
-            </span>
-            <span className="text-sm">
-              <span className="font-semibold">Correo electrónico</span> <br />
-              info@renacencia.com
-            </span>
-          </div>
-          <div className="flex-shrink-0 mt-4 md:mt-0">
-            <Image
-              src="https://ext.same-assets.com/1332691435/1769299446.jpeg"
-              alt="Logo Renacencia"
-              width={110}
-              height={110}
-              className="mx-auto"
-            />
-            <div className="text-white text-center mt-2 font-serif text-lg">
-              Renacencia
-              <br />
-              <span className="text-xs font-normal tracking-wide">
-                psicología consciente
-              </span>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 }
