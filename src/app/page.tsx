@@ -24,7 +24,7 @@ export default function Home() {
       </section>
 
       {/* Testimonial, Talleres y Seminarios section */}
-      <section className="w-full px-6 pt-4 flex flex-col items-center justify-center">
+      <section className="w-full px-6 pt-4 flex flex-col items-center justify-center max-w-[1100px] mx-auto">
         <WorkshopsHeader />
         <WorkShopsBody />
       </section>

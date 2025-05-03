@@ -22,7 +22,7 @@ const WorkShopsBody = () => {
         </div>
       </div>
       <div>
-        <p className="font-opensans text-center italic md:px-72 md:text-lg">
+        <p className="font-opensans text-center italic md:text-lg">
           Tomes o no terapia, siempre podrás participar de nuestros{" "}
           <span className="font-bold">seminarios y talleres</span>, accediendo a
           material exclusivo. Lo importante para nosotros es estimular y ayudar
