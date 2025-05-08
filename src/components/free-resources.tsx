@@ -32,7 +32,7 @@ const FreeResouces = () => {
         También: Recursos Gratuitos a tu alcance
       </div>
       <Image
-        src="/images/free-resources-bg.png"
+        src="/images/hero-img.png"
         alt="Girl walking in the forest with butterflies"
         fill
         className="object-cover object-center absolute opacity-20 z-0"
