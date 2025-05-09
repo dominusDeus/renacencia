@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 const WorkshopsHeader = () => {
   return (
     <div className="w-full flex flex-col text-[32px] gap-6 items-center">
-      <div className="md:text-5xl text-[32PX] font-bold text-center">
+      <div className="md:text-2xl text-[32px] font-bold text-center">
         ¿PREFIERES TERAPIA INDIVIDUAL?
       </div>
       <p className="text-base text-center font-opensans italic">

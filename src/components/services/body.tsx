@@ -8,8 +8,8 @@ import {
 
 const ServicesBody = () => {
   return (
-    <div className="max-w-4xl w-full mt-14 px-4">
-      <h3 className="font-extrabold text-secondary-custom text-center mb-3 font-montserrat text-lg md:text-xl">
+    <div className="max-w-[1100px] w-full mt-14 px-4">
+      <h3 className="font-extrabold text-secondary-custom text-center mb-3 font-montserrat text-lg md:text-3xl">
         CON TERAPIA GRUPAL EN 12 SEMANAS descubrirás 3 cosas…
       </h3>
       <div className="w-full md:flex md:justify-center font-opensans text-lg pb-5 text-center">
