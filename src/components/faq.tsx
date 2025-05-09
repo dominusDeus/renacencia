@@ -174,13 +174,13 @@ const Faq = () => {
           </AccordionItem>
         ))}
       </Accordion>
-      <div className=" pl-6 my-16 border-l-2 font-opensans border-secondary-custom md:text-lg flex justify-center items-center text-center font-bold">
+      {/* <div className=" pl-6 my-16 border-l-2 font-opensans border-secondary-custom md:text-lg flex justify-center items-center text-center font-bold">
         <p>
           "…La vida y la muerte son un solo hilo, la misma línea pero vista
           desde diferentes lados" -{" "}
           <span className="font-normal"> Lao Tsé</span>
         </p>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -16,9 +16,7 @@ export default function Home() {
       <section className="w-full bg-white pt-0 md:py-5 flex justify-center">
         <Hero />
       </section>
-      <section className="relative w-full">
-        <Banner />
-      </section>
+
       <section className="w-full pt-12 px-6 bg-white flex flex-col items-center">
         <ServicesHeader />
         <ServicesBody />
@@ -40,10 +38,14 @@ export default function Home() {
       <section className="w-full">
         <FreeResouces />
       </section>
+      {/* <section className="relative w-full">
+        <Banner />
+      </section> */}
       {/* Preguntas Frecuentes section */}
       <section className="w-full bg-white py-10 px-4 flex flex-col items-center">
         <Faq />
       </section>
+
       <Footer />
     </main>
   );
