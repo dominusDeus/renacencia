@@ -5,11 +5,11 @@ const WorkshopsHeader = () => {
   return (
     <div className="w-full flex flex-col text-[32px] gap-6 items-center">
       <div className="md:text-5xl text-[32PX] font-bold text-center">
-        ¿Necesitas un espacio más íntimo?
+        ¿PREFIERES TERAPIA INDIVIDUAL?
       </div>
       <p className="text-base text-center font-opensans italic">
         Si sientes que aún no es tiempo de abrirte al grupo, pide sesiones de
-        terapia personalizadas con especialistas en duelo
+        terapia personalizadas
       </p>
       <div className="flex flex-col gap-1">
         <Button className="py-6 px-5 justify-start bg-green-600 hover:bg-green-700 text-white text-base rounded-lg font-semibold max-w-[327px] w-full">
