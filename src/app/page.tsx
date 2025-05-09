@@ -8,6 +8,7 @@ import Timeline2 from "@/components/timeline-2";
 import FreeResouces from "@/components/free-resources";
 import Faq from "@/components/faq";
 import Footer from "@/components/footer";
+import Announcement from "@/components/announcement";
 
 export default function Home() {
   return (
@@ -32,19 +33,8 @@ export default function Home() {
         <Timeline2 />
       </section>
       {/* ANNOUNCEMENT */}
-      <section className="w-full bg-white py-10 px-6 md:px-72 flex flex-col items-center">
-        <div className="text-center flex flex-col gap-4 font-montserrat text-[20px] md:text-[27px] font-bold">
-          <h4 className=" uppercase">
-            PROXIMAMENTE SEMINARIO GRATUITO ONLINE CON CONTENIDO DE CALIDAD PARA
-            TODO PÚBLICO
-          </h4>
-          <div>
-            (30/05/2025 - 19.30hs España - 14.30 (Arg/Uru) duración: 1.20hs.
-          </div>
-          <span className="mt-2 block font-bold ">
-            TEMA: El manejo de las emociones en el duelo.
-          </span>
-        </div>
+      <section className="w-full bg-white tablet:py-10 py-2 pb-10 px-6 tablet:px-36 flex flex-col items-center max-w-[1100px] mx-auto">
+        <Announcement />
       </section>
 
       <section className="w-full">

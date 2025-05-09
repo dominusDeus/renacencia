@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import AuthorImage from "../../../public/images/carlos-vega.png";
+import AuthorImage from "../../../public/images/carlos-bn.png";
 
 const WorkShopsBody = () => {
   return (

@@ -98,13 +98,14 @@ export default {
           xl: "5rem",
           "2xl": "6rem",
         },
-        screens: {
-          sm: "640px",
-          md: "768px",
-          lg: "1024px",
-          xl: "1280px",
-          "2xl": "1536px",
-        },
+      },
+      screens: {
+        sm: "640px",
+        md: "768px",
+        tablet: "930px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px",
       },
       keyframes: {
         "accordion-down": {
