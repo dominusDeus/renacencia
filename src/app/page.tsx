@@ -9,15 +9,25 @@ import FreeResouces from "@/components/free-resources";
 import Faq from "@/components/faq";
 import Footer from "@/components/footer";
 import Announcement from "@/components/announcement";
+import { NavigationMenu } from "@radix-ui/react-navigation-menu";
+import PageNavbar from "@/components/page-navbar";
+import HeroCarousel from "@/components/carousel-banner";
 
 export default function Home() {
   return (
     <main className="flex flex-col gap-0 w-full min-h-screen overflow-x-hidden">
-      <section className="w-full bg-white pt-0 md:py-5 flex justify-center">
-        <Hero />
+      <PageNavbar />
+      <section>
+        <HeroCarousel />
       </section>
+      {/* <section className="w-full bg-white pt-0 md:py-5 flex justify-center">
+        <Hero />
+      </section> */}
 
-      <section className="w-full pt-12 px-6 bg-white flex flex-col items-center">
+      <section
+        className="w-full pt-12 px-6 bg-white flex flex-col items-center"
+        id="services"
+      >
         <ServicesHeader />
         <ServicesBody />
       </section>
@@ -31,11 +41,11 @@ export default function Home() {
         <Timeline2 />
       </section>
       {/* ANNOUNCEMENT */}
-      <section className="w-full bg-white tablet:py-10 py-2 pb-10 px-6 tablet:px-36 flex flex-col items-center max-w-[1100px] mx-auto">
+      {/* <section className="w-full bg-white tablet:py-10 py-2 pb-10 px-6 tablet:px-36 flex flex-col items-center max-w-[1100px] mx-auto">
         <Announcement />
-      </section>
+      </section> */}
 
-      <section className="w-full">
+      <section className="w-full" id="resources">
         <FreeResouces />
       </section>
       {/* <section className="relative w-full">
@@ -45,8 +55,9 @@ export default function Home() {
       <section className="w-full bg-white py-10 px-4 flex flex-col items-center">
         <Faq />
       </section>
-
-      <Footer />
+      <section id="contact">
+        <Footer />
+      </section>
     </main>
   );
 }
