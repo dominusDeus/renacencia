@@ -49,59 +49,63 @@ const FooterVariant = () => {
           <h3 className="font-bold text-xl mb-4 border-b-2 border-white pb-2">
             ¿Quieres recibir material de apoyo gratuito?
           </h3>
-          <form
-            onSubmit={handleSubmit}
-            className="flex flex-col gap-3 max-w-md"
-          >
-            <div className="flex flex-col">
-              <label htmlFor="name" className="text-sm mb-1">
-                Nombre
-              </label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                className="p-2 rounded bg-white/10 border border-white/30 text-white"
-                placeholder="Tu nombre"
-              />
-            </div>
-            <div className="flex flex-col">
-              <label htmlFor="email" className="text-sm mb-1">
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                className="p-2 rounded bg-white/10 border border-white/30 text-white"
-                placeholder="Tu email"
-              />
-            </div>
-            <div className="flex flex-col">
-              <label htmlFor="country" className="text-sm mb-1">
-                País
-              </label>
-              <select
-                id="country"
-                name="country"
-                className="p-2 rounded bg-white/10 border border-white/30 text-white"
-              >
-                <option value="">Selecciona tu país</option>
-                <option value="España">España</option>
-                <option value="México">México</option>
-                <option value="Argentina">Argentina</option>
-                <option value="Colombia">Colombia</option>
-                <option value="Chile">Chile</option>
-                <option value="Otro">Otro</option>
-              </select>
-            </div>
-            <button
-              type="submit"
-              className="mt-2 bg-brand-orange text-white py-2 px-4 rounded hover:bg-brand-orange/80 transition-colors"
+          {state.succeeded ? (
+            <p>Gracias por tu interés!</p>
+          ) : (
+            <form
+              onSubmit={handleSubmit}
+              className="flex flex-col gap-3 max-w-md"
             >
-              Suscribirme
-            </button>
-          </form>
+              <div className="flex flex-col">
+                <label htmlFor="name" className="text-sm mb-1">
+                  Nombre
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  className="p-2 rounded bg-white/10 border border-white/30 text-white"
+                  placeholder="Tu nombre"
+                />
+              </div>
+              <div className="flex flex-col">
+                <label htmlFor="email" className="text-sm mb-1">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  className="p-2 rounded bg-white/10 border border-white/30 text-white"
+                  placeholder="Tu email"
+                />
+              </div>
+              <div className="flex flex-col">
+                <label htmlFor="country" className="text-sm mb-1">
+                  País
+                </label>
+                <select
+                  id="country"
+                  name="country"
+                  className="p-2 rounded bg-white/10 border border-white/30 text-white"
+                >
+                  <option value="">Selecciona tu país</option>
+                  <option value="España">España</option>
+                  <option value="México">México</option>
+                  <option value="Argentina">Argentina</option>
+                  <option value="Colombia">Colombia</option>
+                  <option value="Chile">Chile</option>
+                  <option value="Otro">Otro</option>
+                </select>
+              </div>
+              <button
+                type="submit"
+                className="mt-2 bg-brand-orange text-white py-2 px-4 rounded hover:bg-brand-orange/80 transition-colors"
+              >
+                Suscribirme
+              </button>
+            </form>
+          )}
         </div>
       </div>
 
