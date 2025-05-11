@@ -5,7 +5,7 @@ const ServicesHeader = () => {
   return (
     // <section className="w-full py-12 bg-white flex flex-col items-center">
     <div className="max-w-4xl w-full text-center">
-      <h2 className="font-bold text-[20px] italic md:text-3xl mb-6">
+      <h2 className="font-bold text-[20px] md:pt-8 italic md:text-3xl mb-6">
         Terapia con profesionales que entienden lo que vives
       </h2>
       <div className="flex flex-col md:flex-row items-center md:justify-between justify-center">
