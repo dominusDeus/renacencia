@@ -59,6 +59,7 @@ const FooterVariant = () => {
               </label>
               <input
                 type="text"
+                name="name"
                 id="name"
                 className="p-2 rounded bg-white/10 border border-white/30 text-white"
                 placeholder="Tu nombre"
@@ -71,6 +72,7 @@ const FooterVariant = () => {
               <input
                 type="email"
                 id="email"
+                name="email"
                 className="p-2 rounded bg-white/10 border border-white/30 text-white"
                 placeholder="Tu email"
               />
@@ -81,6 +83,7 @@ const FooterVariant = () => {
               </label>
               <select
                 id="country"
+                name="country"
                 className="p-2 rounded bg-white/10 border border-white/30 text-white"
               >
                 <option value="">Selecciona tu país</option>
