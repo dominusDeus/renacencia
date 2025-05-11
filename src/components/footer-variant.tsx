@@ -8,15 +8,10 @@ interface ContactFormData {
   name: string;
   email: string;
   country: string;
-  // message: string;
 }
 
 const FooterVariant = () => {
-  const [state, handleSubmit, reset] = useForm("mldbddjg");
-
-  if (state.succeeded) {
-    return <p>Gracias por tu interés!</p>;
-  }
+  const [state, handleSubmit, reset] = useForm("manodbpd");
 
   return (
     <footer className="relative bg-brand-brown p-2 md:flex md:flex-col md:items-center mx-auto w-full">
@@ -100,7 +95,7 @@ const FooterVariant = () => {
               </div>
               <button
                 type="submit"
-                className="mt-2 bg-brand-orange text-white py-2 px-4 rounded hover:bg-brand-orange/80 transition-colors"
+                className="mt-2 border border-white bg-brand-orange text-white py-2 px-4 rounded hover:bg-brand-orange/80 transition-colors"
               >
                 Suscribirme
               </button>
