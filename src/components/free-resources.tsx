@@ -48,7 +48,10 @@ const FreeResouces = () => {
           ))}
         </div>
       </div>
-      <div className="text-2xl font-montserrat md:text-4xl font-bold relative z-20 text-center text-white py-6 md:py-10">
+      <div
+        id="aboutus"
+        className="text-2xl font-montserrat md:text-4xl font-bold relative z-20 text-center text-white py-6 md:py-10"
+      >
         ¿Cómo surgió Renacencia?
       </div>
 

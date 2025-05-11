@@ -49,7 +49,7 @@ const PageNavbar: React.FC = () => {
               Servicios
             </a>
             <a
-              href="#"
+              href="#aboutus"
               className="text-gray-700 hover:text-pink transition-colors"
             >
               Nosotros
@@ -108,7 +108,7 @@ const PageNavbar: React.FC = () => {
             Servicios
           </a>
           <a
-            href="#"
+            href="#aboutus"
             className="block px-3 border-b border-gray-200 py-2 max-w-[80vw] rounded-md text-base font-medium text-gray-700 hover:text-pink hover:bg-gray-50"
           >
             Nosotros

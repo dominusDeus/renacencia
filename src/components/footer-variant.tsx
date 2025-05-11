@@ -29,7 +29,7 @@ const FooterVariant = () => {
       <div className="flex flex-col md:flex-row gap-8 relative p-6 max-w-[1100px] w-full mx-auto z-10">
         {/* Left column with logo */}
         <div className="md:w-1/2 flex flex-col items-center justify-center">
-          <div className="h-[220px] w-[220px] relative mb-4">
+          <div className="h-[350px] w-[350px] relative mb-4">
             <Image
               src="/isotipo/footer-logo.png"
               alt="Logo Renacencia"
@@ -104,14 +104,14 @@ const FooterVariant = () => {
         </div>
       </div>
 
-      {/* Bottom section spanning both columns */}
-      <div className="text-white flex justify-center py-3 items-center text-center w-[100vw] mx-auto z-10 px-6 mt-4 border border-white/20  relative -left-3">
+      {/* Bottom section spanning both columns Desktop */}
+      <div className=" text-white  justify-center py-3 items-center text-center w-[100vw] mx-auto z-10 px-6 border border-white/20  relative -left-3">
         <p className="text-sm font-bold">
           RENACENCIA es un proyecto de VIACOSMOS
         </p>
 
-        {/* Social media section */}
-        <div className="flex items-center justify-center">
+        {/* Social media section Desktop */}
+        <div className="hidden md:flex items-center justify-center">
           <div className="h-[50px] w-[100px] relative">
             <Image
               src="/images/via-cosmos-no-white.png"
@@ -121,18 +121,56 @@ const FooterVariant = () => {
             />
           </div>
           <div className="flex gap-6 mt-2">
-            <div className="flex items-center gap-2">
-              <Instagram className="text-white" size={22} />
-              <span>Instagram</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Youtube className="text-white" size={22} />
-              <span>Youtube</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Facebook className="text-white" size={22} />
-              <span>Facebook</span>
-            </div>
+            <a href="https://www.instagram.com/viacosmos/" target="_blank">
+              <div className="flex items-center gap-2">
+                <Instagram className="text-white" size={22} />
+                <span>Instagram</span>
+              </div>
+            </a>
+            <a href="https://www.youtube.com/@viacosmos" target="_blank">
+              <div className="flex items-center gap-2">
+                <Youtube className="text-white" size={22} />
+                <span>Youtube</span>
+              </div>
+            </a>
+            <a href="https://www.facebook.com/viacosmosok" target="_blank">
+              <div className="flex items-center gap-2">
+                <Facebook className="text-white" size={22} />
+                <span>Facebook</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        {/* Social media section Mobile*/}
+        <div className="md:hidden flex flex-col items-center justify-center pt-6">
+          <div className="h-[100px] w-[200px] relative">
+            <Image
+              src="/images/via-cosmos-no-white.png"
+              alt="Via Cosmos"
+              fill
+              className="object-contain"
+            />
+          </div>
+          <div className="flex gap-6 mt-2 text-sm">
+            <a href="https://www.instagram.com/viacosmos/" target="_blank">
+              <div className="flex items-center gap-2">
+                <Instagram className="text-white" size={22} />
+                <span>Instagram</span>
+              </div>
+            </a>
+            <a href="https://www.youtube.com/@viacosmos" target="_blank">
+              <div className="flex items-center gap-2">
+                <Youtube className="text-white" size={22} />
+                <span>Youtube</span>
+              </div>
+            </a>
+            <a href="https://www.facebook.com/viacosmosok" target="_blank">
+              <div className="flex items-center gap-2">
+                <Facebook className="text-white" size={22} />
+                <span>Facebook</span>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -140,8 +178,8 @@ const FooterVariant = () => {
       {/* Bottom copyright section */}
       <div className="w-full mt-6 py-4 text-center text-white/70 text-xs z-10">
         <p>
-          © {new Date().getFullYear()} RENACENCIA. Todos los derechos
-          reservados.
+          © {new Date().getFullYear()} RENACENCIA fue hecho por Nuwe design.
+          Todos los derechos reservados.
         </p>
       </div>
     </footer>
