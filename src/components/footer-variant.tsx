@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import { Instagram, Youtube, Facebook } from "lucide-react";
@@ -12,6 +13,10 @@ interface ContactFormData {
 
 const FooterVariant = () => {
   const [state, handleSubmit, reset] = useForm("mldbddjg");
+
+  if (state.succeeded) {
+    return <p>Gracias por tu interés!</p>;
+  }
 
   return (
     <footer className="relative bg-brand-brown p-2 md:flex md:flex-col md:items-center mx-auto w-full">
