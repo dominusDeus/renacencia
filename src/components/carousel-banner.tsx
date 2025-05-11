@@ -37,10 +37,10 @@ const carouselData: Slide[] = [
         <p className="text-secondary-custom font-bold">
           Psicoterapeutas especializadas/os estamos a tu lado.
         </p>
-        <p className="text-base font-semibold italic font-opensans">
+        {/* <p className="text-base font-semibold italic font-opensans">
           Honremos <span className="font-bold">con nuestra vida</span> a quienes
           partieron antes
-        </p>
+        </p> */}
         <ul className="list-none text-xs font-opensans font-bold list-inside">
           <li>🔹 TERAPIA GRUPAL ESPECIALIZADA EN DUELO</li>
           <li>🔹 Seminarios y Talleres sobre Vida y Muerte</li>
@@ -152,7 +152,7 @@ const HeroCarousel: React.FC = () => {
 
   return (
     <div
-      className="carousel h-[600px] md:h-[500px]"
+      className="carousel h-[calc(100vh-4rem)] md:h-[500px]"
       onTouchStart={onTouchStart}
       onTouchMove={onTouchMove}
       onTouchEnd={onTouchEnd}
@@ -170,10 +170,10 @@ const HeroCarousel: React.FC = () => {
             fill
             className="absolute z-0 blur-sm object-cover"
           />
-          <div className="container mx-auto h-full flex flex-col md:flex-row items-center justify-center px-4 py-8 md:py-0 relative z-10">
+          <div className="container mx-auto h-full flex flex-col md:flex-row items-center justify-center px-6 py-10 md:py-0 relative z-10">
             {/* Logo/Image section */}
-            <div className="w-full md:w-1/2 flex justify-center md:justify-end p-4">
-              <div className="relative md:w-[350px] bg-transparent rounded-xl p-6 md:p-8 w-full max-w-md md:h-[350px]">
+            <div className="w-full md:w-1/2 flex justify-center md:justify-end p-2 md:p-4">
+              <div className="relative w-[250px] h-[250px] md:w-[350px] md:h-[350px] bg-transparent rounded-xl">
                 <Image
                   src={slide.logo}
                   alt="René Mey Logo"
@@ -184,16 +184,18 @@ const HeroCarousel: React.FC = () => {
             </div>
 
             {/* Text content section */}
-            <div className="w-full md:w-1/2 text-white drop-shadow-2xl p-4 md:pl-8 mt-4 md:mt-0 animate-fade">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+            <div className="w-full md:w-1/2 text-white drop-shadow-2xl md:p-4 px-6 md:pl-8 mt-2 md:mt-0 animate-fade">
+              <h2 className="text-xl md:text-3xl lg:text-4xl font-bold mb-2 md:mb-4">
                 {slide.title}
               </h2>
-              <p className="text-xl md:text-2xl mb-4">{slide.description}</p>
-              <div className="text-sm md:text-base mb-6 max-w-lg">
+              <p className="text-lg md:text-xl lg:text-2xl mb-2 md:mb-4">
+                {slide.description}
+              </p>
+              <div className="text-xs md:text-sm lg:text-base mb-4 md:mb-6 max-w-lg">
                 {slide.longDescription}
               </div>
               {slide.buttonText && (
-                <button className="bg-white text-gray-800 font-bold py-2 px-6 rounded-md hover:bg-pink hover:text-white transition-all duration-300">
+                <button className="bg-white text-gray-800 font-bold text-sm md:text-base py-2 px-4 md:px-6 rounded-md hover:bg-pink hover:text-white transition-all duration-300">
                   {slide.buttonText}
                 </button>
               )}
@@ -204,10 +206,10 @@ const HeroCarousel: React.FC = () => {
 
       {/* Navigation arrows */}
       <div className="carousel-arrow prev" onClick={prevSlide}>
-        <ArrowLeft size={24} />
+        <ArrowLeft size={20} className="md:size-24" />
       </div>
       <div className="carousel-arrow next" onClick={nextSlide}>
-        <ArrowRight size={24} />
+        <ArrowRight size={20} className="md:size-24" />
       </div>
 
       {/* Indicators */}

@@ -129,14 +129,21 @@
   transform: translateY(-50%);
   background: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  z-index: 10;
+  z-index: 20;
   transition: all 0.1s ease;
+}
+
+@media (min-width: 768px) {
+  .carousel-arrow {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .carousel-arrow:hover {
@@ -153,12 +160,19 @@
 
 .carousel-indicators {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 8px;
+  gap: 6px;
   z-index: 10;
+}
+
+@media (min-width: 768px) {
+  .carousel-indicators {
+    bottom: 20px;
+    gap: 8px;
+  }
 }
 
 .carousel-indicator {

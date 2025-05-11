@@ -12,6 +12,7 @@ import Announcement from "@/components/announcement";
 import { NavigationMenu } from "@radix-ui/react-navigation-menu";
 import PageNavbar from "@/components/page-navbar";
 import HeroCarousel from "@/components/carousel-banner";
+import FooterVariant from "@/components/footer-variant";
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
       </section> */}
 
       <section
-        className="w-full pt-12 px-6 bg-white flex flex-col items-center"
+        className="w-full pt-12 md:pt-0 px-6 bg-white flex flex-col items-center"
         id="services"
       >
         <ServicesHeader />
@@ -48,15 +49,23 @@ export default function Home() {
       <section className="w-full" id="resources">
         <FreeResouces />
       </section>
+      <div className="max-w-[1100px] mx-auto pl-6 my-10 border-l-2 font-opensans border-secondary-custom md:text-lg flex justify-center items-center text-center font-bold">
+        <p>
+          "…La vida y la muerte son un solo hilo, la misma línea pero vista
+          desde diferentes lados" -{" "}
+          <span className="font-normal"> Lao Tsé</span>
+        </p>
+      </div>
       {/* <section className="relative w-full">
         <Banner />
       </section> */}
       {/* Preguntas Frecuentes section */}
-      <section className="w-full bg-white py-10 px-4 flex flex-col items-center">
+      <section className="w-full bg-white py-10 md:pt-0 px-4 flex flex-col items-center">
         <Faq />
       </section>
       <section id="contact">
-        <Footer />
+        {/* <Footer /> */}
+        <FooterVariant />
       </section>
     </main>
   );

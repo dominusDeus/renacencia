@@ -11,7 +11,6 @@ const Footer = () => {
         className="absolute z-0 opacity-20 object-cover"
       />
       <div className="flex flex-col gap-6rounded-md relative p-6 max-w-[1100px] ">
-        {/* TODO: REPLACE WITH ACTAL IMAGE */}
         <div className="flex flex-col gap-2 text-white z-10">
           <div className="font-bold w-5/6 border-b-2 border-white font-opensans mb-2 leading-4 text-xl md:text-2xl italic">
             Contacto
@@ -38,7 +37,7 @@ const Footer = () => {
             <div className="py-4 flex gap-4">
               <div className="min-w-[40px]">
                 <Image
-                  src="https://ext.same-assets.com/1332691435/1769299446.jpeg"
+                  src="/public/images/via-cosmos-no-white.png"
                   alt="Logo Renacencia"
                   width={40}
                   height={40}

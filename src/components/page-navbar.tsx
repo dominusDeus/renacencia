@@ -12,7 +12,7 @@ const PageNavbar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-white shadow-md">
+    <nav className="md:bg-white md:shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
@@ -85,37 +85,37 @@ const PageNavbar: React.FC = () => {
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <a
             href="#"
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-pink hover:bg-gray-50"
+            className="block px-3 border-b border-gray-200 py-2 max-w-[80vw] rounded-md text-base font-medium text-gray-700 hover:text-pink hover:bg-gray-50"
           >
             Inicio
           </a>
           <a
             href="#resources"
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-pink hover:bg-gray-50"
+            className="block px-3 border-b border-gray-200 py-2 max-w-[80vw] rounded-md text-base font-medium text-gray-700 hover:text-pink hover:bg-gray-50"
           >
             Recursos
           </a>
           <a
             href="#"
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-pink hover:bg-gray-50"
+            className="block px-3 border-b border-gray-200 py-2 max-w-[80vw] rounded-md text-base font-medium text-gray-700 hover:text-pink hover:bg-gray-50"
           >
             Seminario
           </a>
           <a
             href="#services"
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-pink hover:bg-gray-50"
+            className="block px-3 border-b border-gray-200 py-2 max-w-[80vw] rounded-md text-base font-medium text-gray-700 hover:text-pink hover:bg-gray-50"
           >
             Servicios
           </a>
           <a
             href="#"
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-pink hover:bg-gray-50"
+            className="block px-3 border-b border-gray-200 py-2 max-w-[80vw] rounded-md text-base font-medium text-gray-700 hover:text-pink hover:bg-gray-50"
           >
             Nosotros
           </a>
           <a
             href="#contact"
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-pink hover:bg-gray-50"
+            className="block px-3 py-2 max-w-[80vw] border-b border-gray-200 rounded-md text-base font-medium text-gray-700 hover:text-pink hover:bg-gray-50"
           >
             Contacto
           </a>
