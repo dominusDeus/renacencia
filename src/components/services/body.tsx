@@ -38,24 +38,24 @@ const ServicesBody = () => {
         {/* Circle with icons container */}
         <div className="flex flex-col md:col-span-1 md:row-span-2 relative w-full max-w-[290px] aspect-square mx-auto mt-8 rotate-45 -translate-y-4">
           {/* Main circle */}
-          <div className="absolute inset-0 border-[15px] border-brand-brown rounded-full "></div>
+          <div className="absolute inset-0 border-[15px] border-orange-400 rounded-full "></div>
 
           {/* Icons */}
-          <div className="absolute -top-[14px] left-1/2 -translate-x-1/2 p-2 -rotate-45 rounded-full border-brand-brown bg-brand-brown">
+          <div className="absolute -top-[14px] left-1/2 -translate-x-1/2 p-2 -rotate-45 rounded-full border-orange-400 bg-orange-400">
             <HeartIcon className="w-8 h-8 text-white" />
           </div>
-          <div className="absolute top-[148px] -right-6 -translate-y-1/2 p-2 -rotate-45 rounded-full border-brand-brown bg-brand-brown">
+          <div className="absolute top-[148px] -right-6 -translate-y-1/2 p-2 -rotate-45 rounded-full border-orange-400 bg-orange-400">
             <UserIcon className="w-8 h-8 text-white" />
           </div>
-          <div className="absolute -bottom-6 left-[52%] -translate-x-1/2 p-2 -rotate-45  rounded-full border-brand-brown bg-brand-brown">
+          <div className="absolute -bottom-6 left-[52%] -translate-x-1/2 p-2 -rotate-45  rounded-full border-orange-400 bg-orange-400">
             <CalendarIcon className="w-8 h-8 text-white" />
           </div>
-          <div className="absolute top-1/2 -left-4 -translate-y-1/2 p-2 -rotate-45 rounded-full border-brand-brown bg-brand-brown">
+          <div className="absolute top-1/2 -left-4 -translate-y-1/2 p-2 -rotate-45 rounded-full border-orange-400 bg-orange-400">
             <StarIcon className="w-8 h-8 text-white" />
           </div>
         </div>
         <div className="hidden md:col-span1  md:row-span-1 md:flex md:flex-col md:justify-center pl-7">
-          <div className="font-bold font-montserrat pb-3 text-xl flex justify-starr">
+          <div className="font-bold font-montserrat pb-3 text-xl flex justify-start">
             Conexión
           </div>
           <p>
@@ -87,7 +87,7 @@ const ServicesBody = () => {
         {/* /// MOBILE CARDS /// */}
         <div className="flex flex-col md:hidden pt-4">
           <div className="card flex gap-4 items-start w-full">
-            <div className="bg-brand-brown rounded-md margin-0 p-2">
+            <div className="bg-orange-400 rounded-md margin-0 p-2">
               <HeartIcon className="w-5 h-5 text-white" />
             </div>
             <div className="">
@@ -100,7 +100,7 @@ const ServicesBody = () => {
             </div>
           </div>
           <div className="card flex gap-4 items-start w-full pt-6">
-            <div className="bg-brand-brown rounded-md margin-0 p-2">
+            <div className="bg-orange-400 rounded-md margin-0 p-2">
               <UserIcon className="w-5 h-5 text-white" />
             </div>
             <div className="">
@@ -114,7 +114,7 @@ const ServicesBody = () => {
             </div>
           </div>
           <div className="card flex gap-4 items-start w-full pt-6">
-            <div className="bg-brand-brown rounded-md margin-0 p-2">
+            <div className="bg-orange-400 rounded-md margin-0 p-2">
               <UserIcon className="w-5 h-5 text-white" />
             </div>
             <div className="">
@@ -127,14 +127,14 @@ const ServicesBody = () => {
             </div>
           </div>
           <div className="card flex gap-4 items-start w-full pt-6">
-            <div className="bg-brand-brown rounded-md margin-0 p-2">
+            <div className="bg-orange-400 rounded-md margin-0 p-2">
               <CalendarIcon className="w-5 h-5 text-white" />
             </div>
             <div className="">
               <div className="font-bold text-lg">Acompañamiento</div>
               <p>
                 <span className="font-bold">Grupos pequeños </span>
-                (no más de 7 personas), donde te sentirás escuchada/o sin
+                (no más de 6 personas), donde te sentirás escuchada/o sin
                 juicios.
               </p>
             </div>

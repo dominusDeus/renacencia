@@ -41,13 +41,13 @@ const Hero = () => {
         <div className="flex flex-col gap-1 mt-1 self-center md:self-start">
           <Button
             asChild
-            className=" bg-green-600 hover:bg-green-700 text-white text-base px-4 py-2 font-opensans rounded-md font-semibold max-w-xs"
+            className=" bg-green-600 hover:bg-green-700 text-white text-base px-4 py-2 md:max-w-none font-opensans rounded-md font-semibold max-w-xs"
           >
             <Link
               href="https://api.whatsapp.com/send/?phone=34624840232&text=Hola%20viacosmos%2C%20me%20interesar%C3%ADa%20inscribirme%20al%20seminario%20gratuito&type=phone_number&app_absent=0"
-              className="block truncate w-[calc(327px-2rem)] font-opensans"
+              className="block truncate md:overflow-visible w-[calc(327px-2rem)] md:w-auto font-opensans"
             >
-              AGENDA TU ENTREVISTA GRATUITA
+              AGENDA TU ENTREVISTA GRATUITA DE VALORACION,
             </Link>
           </Button>
           <span className="mt-1 text-sm text-gray-600">

@@ -12,10 +12,10 @@ const WorkshopsHeader = () => {
         terapia personalizadas
       </p>
       <div className="flex flex-col gap-1">
-        <Button className="py-6 px-5 justify-start bg-green-600 hover:bg-green-700 text-white text-base rounded-lg font-semibold max-w-[327px] w-full">
+        <Button className="py-6 px-5 justify-start bg-green-600 hover:bg-green-700 text-white text-base rounded-lg font-semibold md:max-w-none max-w-[327px] w-full">
           <Link
             href="https://api.whatsapp.com/send/?phone=34624840232&text=Hola%20viacosmos%2C%20quisiera%20una%20entrevista%20gratuita%20de%20valoraci%C3%B3n&type=phone_number&app_absent=0"
-            className="block truncate w-[calc(327px-2rem)] font-opensans"
+            className="block truncate w-[calc(327px-2rem)] md:w-auto md:overflow-visible font-opensans"
           >
             AGENDA TU ENTREVISTA GRATUITA DE VALORACION
           </Link>

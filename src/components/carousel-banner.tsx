@@ -28,30 +28,6 @@ const carouselData: Slide[] = [
   {
     id: 1,
     backgroundImage: Butterflies.src,
-    logo: HeroImage.src,
-    title: "Cuando sientes que todo perdió sentido…",
-    description:
-      " Aprender a honrar con nuestra vida a quienes partieron antes lo cambia todo",
-    longDescription: (
-      <>
-        <p className="text-secondary-custom font-bold">
-          Psicoterapeutas especializadas/os estamos a tu lado.
-        </p>
-        {/* <p className="text-base font-semibold italic font-opensans">
-          Honremos <span className="font-bold">con nuestra vida</span> a quienes
-          partieron antes
-        </p> */}
-        <ul className="list-none text-xs font-opensans font-bold list-inside">
-          <li>🔹 TERAPIA GRUPAL ESPECIALIZADA EN DUELO</li>
-          <li>🔹 Seminarios y Talleres sobre Vida y Muerte</li>
-        </ul>
-      </>
-    ),
-    buttonText: "¡Únete ahora!",
-  },
-  {
-    id: 2,
-    backgroundImage: Butterflies.src,
     logo: LoreCarlos.src,
     title: "TE INVITAMOS A ASISTIR AL SEMINARIO GRATUITO",
     description: "“VOLVIENDO A LA VIDA”",
@@ -65,7 +41,7 @@ const carouselData: Slide[] = [
     buttonText: "RESERVA TU SITIO AHORA MISMO",
   },
   {
-    id: 3,
+    id: 2,
     backgroundImage: Consultorio.src,
     logo: Leaflets.src,
     title: "TERAPIA GRUPAL ONLINE:",
@@ -79,7 +55,7 @@ const carouselData: Slide[] = [
     buttonText: "Entrevista de Valoración Gratuita",
   },
   {
-    id: 4,
+    id: 3,
     backgroundImage: Seed.src,
     logo: Hands.src,
     title: " SOBRE NOSOTR@S:",
@@ -94,6 +70,30 @@ const carouselData: Slide[] = [
     ),
     buttonText: "COMO NACE RENACENCIA",
   },
+  // {
+  //   id: 4,
+  //   backgroundImage: Butterflies.src,
+  //   logo: HeroImage.src,
+  //   title: "Cuando sientes que todo perdió sentido…",
+  //   description:
+  //     " Aprender a honrar con nuestra vida a quienes partieron antes lo cambia todo",
+  //   longDescription: (
+  //     <>
+  //       <p className="text-secondary-custom font-bold">
+  //         Psicoterapeutas especializadas/os estamos a tu lado.
+  //       </p>
+  //       {/* <p className="text-base font-semibold italic font-opensans">
+  //         Honremos <span className="font-bold">con nuestra vida</span> a quienes
+  //         partieron antes
+  //       </p> */}
+  //       <ul className="list-none text-xs font-opensans font-bold list-inside">
+  //         <li>🔹 TERAPIA GRUPAL ESPECIALIZADA EN DUELO</li>
+  //         <li>🔹 Seminarios y Talleres sobre Vida y Muerte</li>
+  //       </ul>
+  //     </>
+  //   ),
+  //   buttonText: "¡Únete ahora!",
+  // },
 ];
 
 const HeroCarousel: React.FC = () => {
@@ -124,7 +124,7 @@ const HeroCarousel: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 5000);
+    }, 6000);
     return () => clearInterval(interval);
   }, [nextSlide]);
 
@@ -195,7 +195,7 @@ const HeroCarousel: React.FC = () => {
                 {slide.longDescription}
               </div>
               {slide.buttonText && (
-                <button className="bg-white text-gray-800 font-bold text-sm md:text-base py-2 px-4 md:px-6 rounded-md hover:bg-pink hover:text-white transition-all duration-300">
+                <button className="bg-secondary-custom text-white font-bold text-sm md:text-base py-2 px-4 md:px-6 rounded-md hover:bg-pink hover:text-white transition-all duration-300">
                   {slide.buttonText}
                 </button>
               )}

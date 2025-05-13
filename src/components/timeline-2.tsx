@@ -137,7 +137,7 @@ export default function Timeline2() {
         <button className="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition-colors font-bold">
           <Link
             href="https://api.whatsapp.com/send/?phone=34624840232&text=Hola%20viacosmos%2C%20me%20interesa%20saber%20m%C3%A1s%20acerca%20de%20los%20talleres&type=phone_number&app_absent=0"
-            className="block truncate w-[calc(327px-2rem)] font-opensans"
+            className="block truncate w-[calc(327px-2rem)] md:w-auto md:overflow-visible font-opensans"
           >
             MÁS INFO SOBRE TALLERES Y SEMINARIOS
           </Link>
