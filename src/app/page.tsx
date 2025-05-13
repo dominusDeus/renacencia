@@ -13,18 +13,21 @@ import { NavigationMenu } from "@radix-ui/react-navigation-menu";
 import PageNavbar from "@/components/page-navbar";
 import HeroCarousel from "@/components/carousel-banner";
 import FooterVariant from "@/components/footer-variant";
+import HeroReplacement from "@/components/hero-replacement";
 
 export default function Home() {
   return (
     <main className="flex flex-col gap-0 w-full min-h-screen overflow-x-hidden">
-      <PageNavbar />
+      {/* <PageNavbar />
       <section>
         <HeroCarousel />
-      </section>
+      </section> */}
       {/* <section className="w-full bg-white pt-0 md:py-5 flex justify-center">
         <Hero />
       </section> */}
-
+      <section className="">
+        <HeroReplacement />
+      </section>
       <section
         className="w-full pt-12 md:pt-0 px-6 bg-white flex flex-col items-center"
         id="services"

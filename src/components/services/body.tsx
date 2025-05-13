@@ -94,7 +94,7 @@ const ServicesBody = () => {
               <div className="font-bold text-lg">Acompañamiento</div>
               <p>
                 <span className="font-bold">Grupos pequeños </span>
-                (no más de 7 personas), donde te sentirás escuchada/o sin
+                (no más de 6 personas), donde te sentirás escuchada/o sin
                 juicios.
               </p>
             </div>
@@ -131,11 +131,12 @@ const ServicesBody = () => {
               <CalendarIcon className="w-5 h-5 text-white" />
             </div>
             <div className="">
-              <div className="font-bold text-lg">Acompañamiento</div>
+              <div className="font-bold text-lg">Transformación</div>
               <p>
-                <span className="font-bold">Grupos pequeños </span>
-                (no más de 6 personas), donde te sentirás escuchada/o sin
-                juicios.
+                Terapia moderna integrada con filosofías milenarias.
+                <span className="font-bold">
+                  Apuntando al cielo con los pies en la tierra.
+                </span>
               </p>
             </div>
           </div>
