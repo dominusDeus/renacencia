@@ -32,7 +32,7 @@ const ServicesBody = () => {
           </div>
           <p>
             <span className="font-bold">Grupos pequeños </span>
-            (no más de 7 personas), donde te sentirás escuchada/o sin juicios.
+            (no más de 6 personas), donde te sentirás escuchada/o sin juicios.
           </p>
         </div>
         {/* Circle with icons container */}
@@ -42,16 +42,16 @@ const ServicesBody = () => {
 
           {/* Icons */}
           <div className="absolute -top-[14px] left-1/2 -translate-x-1/2 p-2 -rotate-45 rounded-full border-orange-400 bg-orange-400">
-            <HeartIcon className="w-8 h-8 text-white" />
+            <UserIcon className="w-8 h-8 text-white" />
           </div>
           <div className="absolute top-[148px] -right-6 -translate-y-1/2 p-2 -rotate-45 rounded-full border-orange-400 bg-orange-400">
-            <UserIcon className="w-8 h-8 text-white" />
+            <StarIcon className="w-8 h-8 text-white" />
           </div>
           <div className="absolute -bottom-6 left-[52%] -translate-x-1/2 p-2 -rotate-45  rounded-full border-orange-400 bg-orange-400">
             <CalendarIcon className="w-8 h-8 text-white" />
           </div>
           <div className="absolute top-1/2 -left-4 -translate-y-1/2 p-2 -rotate-45 rounded-full border-orange-400 bg-orange-400">
-            <StarIcon className="w-8 h-8 text-white" />
+            <HeartIcon className="w-8 h-8 text-white" />
           </div>
         </div>
         <div className="hidden md:col-span1  md:row-span-1 md:flex md:flex-col md:justify-center pl-7">
@@ -113,22 +113,10 @@ const ServicesBody = () => {
               </p>
             </div>
           </div>
+
           <div className="card flex gap-4 items-start w-full pt-6">
             <div className="bg-orange-400 rounded-md margin-0 p-2">
-              <UserIcon className="w-5 h-5 text-white" />
-            </div>
-            <div className="">
-              <div className="font-bold text-lg">Flexibilidad</div>
-              <p>
-                Únete en grupos desde tu hogar, por la mañana o la tarde.{" "}
-                <span className="font-bold">Trabaja profundo con terapia </span>
-                por la pantalla
-              </p>
-            </div>
-          </div>
-          <div className="card flex gap-4 items-start w-full pt-6">
-            <div className="bg-orange-400 rounded-md margin-0 p-2">
-              <CalendarIcon className="w-5 h-5 text-white" />
+              <StarIcon className="w-5 h-5 text-white" />
             </div>
             <div className="">
               <div className="font-bold text-lg">Transformación</div>
@@ -137,6 +125,19 @@ const ServicesBody = () => {
                 <span className="font-bold">
                   Apuntando al cielo con los pies en la tierra.
                 </span>
+              </p>
+            </div>
+          </div>
+          <div className="card flex gap-4 items-start w-full pt-6">
+            <div className="bg-orange-400 rounded-md margin-0 p-2">
+              <CalendarIcon className="w-5 h-5 text-white" />
+            </div>
+            <div className="">
+              <div className="font-bold text-lg">Flexibilidad</div>
+              <p>
+                Únete en grupos desde tu hogar, por la mañana o la tarde.{" "}
+                <span className="font-bold">Trabaja profundo con terapia </span>
+                por la pantalla
               </p>
             </div>
           </div>
