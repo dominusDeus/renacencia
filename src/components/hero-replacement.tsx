@@ -10,6 +10,12 @@ const HeroReplacement = () => {
     <div className="w-full font-opensans">
       {/* Header text */}
       <div className="w-full relative py-4 bg-yellow-50">
+        <Image
+          src={Butterflies.src}
+          alt="Butterflies"
+          fill
+          className="object-cover opacity-50 blur-sm"
+        />
         <div className="relative z-10 text-xl text-center px-4">
           <span className="font-bold text-orange-500">
             Psicología Consciente
@@ -59,9 +65,9 @@ const HeroReplacement = () => {
 
           <p className="mb-3 text-center md:text-left">
             En este{" "}
-            <span className="font-bold text-red-700">seminario gratuito</span>
-            , reflexionaremos acerca de lo que la presencia de la muerte
-            significa en nuestra vida. En un diálogo con la{" "}
+            <span className="font-bold text-red-700">seminario gratuito</span>,
+            reflexionaremos acerca de lo que la presencia de la muerte significa
+            en nuestra vida. En un diálogo con la{" "}
             <span className="font-bold text-red-700">
               psicóloga sanitaria con formación en duelo y terapeuta Gestalt,
               Lorena Leiro Paz
