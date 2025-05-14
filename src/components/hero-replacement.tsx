@@ -43,9 +43,8 @@ const HeroReplacement = () => {
         {/* Right column - Content and images */}
         <div className="w-full md:w-1/2 p-4 md:p-6">
           {/* Seminar title */}
-          <div className="text-2xl font-bold text-orange-600 mb-3 text-center md:text-center">
-            <p>SEMINARIO ONLINE GRATUITO</p>
-            <p>"VOLVIENDO A LA VIDA"</p>
+          <div className="text-xl font-bold text-orange-600 mb-3 text-center md:text-center">
+            SEMINARIO ONLINE GRATUITO "VOLVIENDO A LA VIDA"
           </div>
           <div className="mb-4 text-center">
             <div className="italic bg-opacity-50 text-red-700 text-[11px] bg-yellow-100 inline-block px-2 py-1">
