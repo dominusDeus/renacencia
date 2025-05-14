@@ -41,8 +41,9 @@ const FooterVariant = () => {
 
         {/* Right column with form */}
         <div className="md:w-1/2 text-white">
-          <h3 className="font-bold text-xl mb-4 border-b-2 border-white pb-2">
-            ¿Quieres recibir material de apoyo gratuito?
+          <h3 className="font-bold text-xl md:text-lg mb-4 border-b-2 border-white pb-2">
+            QUIERO RECIBIR LA NEWSLETTER QUINCENAL CON RECURSOS Y APOYO
+            GRATUITOS
           </h3>
           {state.succeeded ? (
             <p>Gracias por tu interés!</p>
