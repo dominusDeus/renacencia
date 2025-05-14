@@ -18,8 +18,8 @@ import HeroReplacement from "@/components/hero-replacement";
 export default function Home() {
   return (
     <main className="flex flex-col gap-0 w-full min-h-screen overflow-x-hidden">
-      {/* <PageNavbar />
-      <section>
+      <PageNavbar />
+      {/* <section>
         <HeroCarousel />
       </section> */}
       {/* <section className="w-full bg-white pt-0 md:py-5 flex justify-center">
