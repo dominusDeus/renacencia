@@ -112,7 +112,7 @@ const HeroReplacement = () => {
               <button className="xl:mt-8 bg-green-600 text-white py-3 px-6 rounded-md font-semibold hover:bg-green-700 transition-colors w-full sm:w-auto">
                 <Link
                   target="_blank"
-                  href="https://docs.google.com/forms/d/1Gh3uVmpYLWT7NrBfHfUTbcQNwqBrYGYO5xVt4FoUg9E/viewform?edit_requested=true&edit2=2_ABaOnucjmAH2zcp1_wXYDXIim7PBBKjn4SFbBvLXW4yqLl539124P7350xQFp4V4KQ"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeQD0BumxsIx6WassCzSXblOKnxpFqFtPdajQ9xngSkXkAS9Q/viewform?usp=sf_link"
                 >
                   INSCRIBIRME AL SEMINARIO ONLINE GRATUITO "VOLVIENDO A LA VIDA"
                 </Link>
