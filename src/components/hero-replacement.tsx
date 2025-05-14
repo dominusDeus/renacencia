@@ -78,7 +78,7 @@ const HeroReplacement = () => {
               , reflexionaremos acerca de lo que la presencia de la muerte
               significa en nuestra vida.
               {/* Lore and Charly image floating right */}
-              <div className="relative w-[210px] h-[123px] float-right ml-4 mb-2 mt-2  hidden md:block">
+              <div className="relative w-[210px] h-[123px] xl:w-[280px] xl:h-[164px] float-right ml-4 mb-2 mt-2  hidden md:block">
                 <Image
                   src={LoreAndCharly.src}
                   alt="Lorena y Carlos"
