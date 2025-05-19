@@ -68,6 +68,7 @@ export default function Home() {
       </section>
       <section id="contact">
         {/* <Footer /> */}
+        {/* Replacing the first gamma design footer */}
         <FooterVariant />
       </section>
     </main>
