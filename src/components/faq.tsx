@@ -20,6 +20,20 @@ const faqList = [
     ),
   },
   {
+    title:
+      "¿Cuales son los descuentos anunciados para terapia grupal e individual?",
+    description: (
+      <>
+        El costo de terapia está calculado para cubrir la participación de los
+        terapeutas y sus debidas supervisiones. Los descuentos no se aplican
+        sobre sesiones sueltas sino sobre los diferentes paquetes. Por ejemplo:
+        En terapia grupal al pagar las 12 sesiones grupales se aplica un
+        descuento del 10%, lo mismo que al concretar todo el mes (o más) de
+        terapia individual.
+      </>
+    ),
+  },
+  {
     title: "¿La terapia es online o presencial?",
     description: (
       <>
@@ -128,20 +142,6 @@ const faqList = [
         >
           Clic aquí si quieres acceder a ella.
         </a>
-      </>
-    ),
-  },
-  {
-    title:
-      "¿Cuales son los descuentos anunciados para terapia grupal e individual?",
-    description: (
-      <>
-        El costo de terapia está calculado para cubrir la participación de los
-        terapeutas y sus debidas supervisiones. Los descuentos no se aplican
-        sobre sesiones sueltas sino sobre los diferentes paquetes. Por ejemplo:
-        En terapia grupal al pagar las 12 sesiones grupales se aplica un
-        descuento del 10%, lo mismo que al concretar todo el mes (o más) de
-        terapia individual.
       </>
     ),
   },

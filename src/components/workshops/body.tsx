@@ -26,7 +26,7 @@ const WorkShopsBody = () => {
           Tomes o no terapia, siempre podrás participar de nuestros{" "}
           <span className="font-bold">seminarios y talleres</span>, accediendo a
           material exclusivo. Lo importante para nosotros es estimular y ayudar
-          en el
+          en el{" "}
           <span className="font-bold">
             crecimiento de la consciencia sobre Vida y Muerte
           </span>
