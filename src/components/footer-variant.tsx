@@ -3,11 +3,14 @@ import React from "react";
 import Image from "next/image";
 import { Instagram, Youtube, Facebook } from "lucide-react";
 import { useForm } from "@formspree/react";
+import { Checkbox } from "./ui/checkbox";
+import { Textarea } from "./ui/textarea";
 
 interface ContactFormData {
   name: string;
   email: string;
-  country: string;
+  message: string;
+  newsletter: boolean;
 }
 
 const FooterVariant = () => {
@@ -42,9 +45,12 @@ const FooterVariant = () => {
         {/* Right column with form */}
         <div className="md:w-1/2 text-white">
           <h3 className="font-bold text-xl md:text-lg mb-4 border-b-2 border-white pb-2">
-            QUIERO RECIBIR LA NEWSLETTER QUINCENAL CON RECURSOS Y APOYO
-            GRATUITOS
+            FORMULARIO DE CONTACTO
           </h3>
+          <p className="text-sm mb-4">
+            Realiza aquí tu consulta, la responderemos a la brevedad. También
+            puedes escribir a volviendoalavida@renacencia.com
+          </p>
           {state.succeeded ? (
             <p>Gracias por tu interés!</p>
           ) : (
@@ -62,6 +68,7 @@ const FooterVariant = () => {
                   id="name"
                   className="p-2 rounded bg-white/10 border border-white/30 text-white"
                   placeholder="Tu nombre"
+                  required
                 />
               </div>
               <div className="flex flex-col">
@@ -74,31 +81,39 @@ const FooterVariant = () => {
                   name="email"
                   className="p-2 rounded bg-white/10 border border-white/30 text-white"
                   placeholder="Tu email"
+                  required
                 />
               </div>
               <div className="flex flex-col">
-                <label htmlFor="country" className="text-sm mb-1">
-                  País
+                <label htmlFor="message" className="text-sm mb-1">
+                  Mensaje
                 </label>
-                <select
-                  id="country"
-                  name="country"
-                  className="p-2 rounded bg-white/10 border border-white/30 text-white"
+                <Textarea
+                  id="message"
+                  name="message"
+                  className="p-2 rounded bg-white/10 border border-white/30 text-white min-h-[100px]"
+                  placeholder="Escribe tu consulta aquí"
+                  required
+                />
+              </div>
+              <div className="flex items-center space-x-2 mt-2">
+                <Checkbox
+                  id="newsletter"
+                  name="newsletter"
+                  className="text-white"
+                />
+                <label
+                  htmlFor="newsletter"
+                  className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                 >
-                  <option value="">Selecciona tu país</option>
-                  <option value="España">España</option>
-                  <option value="México">México</option>
-                  <option value="Argentina">Argentina</option>
-                  <option value="Colombia">Colombia</option>
-                  <option value="Chile">Chile</option>
-                  <option value="Otro">Otro</option>
-                </select>
+                  Quiero recibir novedades de Renacencia
+                </label>
               </div>
               <button
                 type="submit"
                 className="mt-2 border border-white bg-brand-orange text-white py-2 px-4 rounded hover:bg-brand-orange/80 transition-colors"
               >
-                Suscribirme
+                Enviar
               </button>
             </form>
           )}
@@ -153,9 +168,9 @@ const FooterVariant = () => {
               className="object-contain"
             />
           </div>
-          <div className="flex gap-6 mt-2 text-sm">
+          <div className="flex gap-4 mt-2 text-sm">
             <a href="https://www.instagram.com/viacosmos/" target="_blank">
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-1">
                 <Instagram className="text-white" size={22} />
                 <span>Instagram</span>
               </div>
