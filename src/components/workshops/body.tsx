@@ -7,13 +7,13 @@ const WorkShopsBody = () => {
     <div className="pt-24 md:pt-14">
       <div className="mb-9 md:flex md:justify-between md: items-center">
         <div className="md:text-right mb-10">
-          <div className="text-brand-brown font-montserrat text-[20px] md:text-[27px] text-right font-bold md:text-right">
+          <div className="text-brand-brown font-montserrat text-lg md:text-[27px] text-right font-bold md:text-right">
             "Ampliar nuestra CONSCIENCIA sobre la vida y la muerte es el mejor
             consuelo al que podemos aspirar"
           </div>
           <p className="text-xs md:text-sm text-right">
             Carlos Vega, fundador de{" "}
-            <span className="text-secondary-custom">Renacencia</span> y{" "}
+            <span className="text-orange-500 font-bold">Renacencia</span> y{" "}
             <span className="font-bold">@viacosmos</span>
           </p>
         </div>
@@ -23,12 +23,11 @@ const WorkShopsBody = () => {
       </div>
       <div>
         <p className="font-opensans text-center italic md:text-lg">
-          Tomes o no terapia, siempre podrás participar de nuestros{" "}
-          <span className="font-bold">seminarios y talleres</span>, accediendo a
-          material exclusivo. Lo importante para nosotros es estimular y ayudar
-          en el{" "}
+          Tomes o no terapia, podrás participar de nuestros{" "}
+          <span className="font-bold">seminarios y talleres.</span> Siempre
+          buscaremos ayudar en el{" "}
           <span className="font-bold">
-            crecimiento de la consciencia sobre Vida y Muerte
+            crecimiento de la consciencia sobre la Vida y la Muerte
           </span>
         </p>
       </div>

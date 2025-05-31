@@ -36,17 +36,18 @@ const PageNavbar: React.FC = () => {
                 Inicio
               </a>
               <a
-                href="#resources"
-                className="text-gray-700 hover:text-pink transition-colors"
-              >
-                Recursos
-              </a>
-              <a
                 href="#services"
                 className="text-orange-500 hover:text-pink transition-colors"
               >
                 Terapia Online
               </a>
+              <a
+                href="#talleres"
+                className="text-gray-700 hover:text-pink transition-colors"
+              >
+                Talleres
+              </a>
+
               <a
                 href="#aboutus"
                 className="text-gray-700 hover:text-pink transition-colors"
@@ -89,17 +90,18 @@ const PageNavbar: React.FC = () => {
               Inicio
             </a>
             <a
-              href="#resources"
-              className="block px-3 border-b border-gray-200 py-2 max-w-[80vw] rounded-md text-base font-medium text-gray-700 hover:text-pink hover:bg-gray-50"
-            >
-              Recursos
-            </a>
-            <a
               href="#services"
-              className="text-orange-500 block px-3 border-b border-gray-200 py-2 max-w-[80vw] rounded-md text-base font-medium text-gray-700 hover:text-pink hover:bg-gray-50"
+              className="text-orange-500 block px-3 border-b border-gray-200 py-2 max-w-[80vw] rounded-md text-base font-medium hover:text-pink hover:bg-gray-50"
             >
               Terapia Online
             </a>
+            <a
+              href="#talleres"
+              className="block px-3 border-b border-gray-200 py-2 max-w-[80vw] rounded-md text-base font-medium text-gray-700 hover:text-pink hover:bg-gray-50"
+            >
+              Talleres
+            </a>
+
             <a
               href="#aboutus"
               className="block px-3 border-b border-gray-200 py-2 max-w-[80vw] rounded-md text-base font-medium text-gray-700 hover:text-pink hover:bg-gray-50"
