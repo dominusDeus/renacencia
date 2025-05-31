@@ -45,14 +45,14 @@ const HeroReplacement = () => {
           />
         </div>
         {/* ///SECOND LINE MOBILE */}
-        <div className="second-line-mobile w-full relative py-2">
+        <div className="second-line-mobile w-full relative py-2 md:hidden">
           <Image
             src={Butterflies.src}
             alt="Butterflies"
             fill
             className="object-cover opacity-50 blur-sm"
           />
-          <div className="md:hidden relative z-10 text-[11px] font-bold text-center">
+          <div className=" relative z-10 text-[11px] font-bold text-center">
             Renace al presente transformando el dolor en gratitud
           </div>
         </div>
