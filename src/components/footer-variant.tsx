@@ -24,7 +24,7 @@ const FooterVariant = () => {
           src="/images/footer-bg.jpg"
           alt="Footer background"
           fill
-          className="opacity-20 md:object-cover object-fill"
+          className="opacity-20 md:object-cover object-contain"
         />
       </div>
 
