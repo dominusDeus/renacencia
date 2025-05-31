@@ -19,12 +19,20 @@ const FooterVariant = () => {
   return (
     <footer className="relative bg-brand-brown p-2 md:flex md:flex-col md:items-center mx-auto w-full">
       {/* Background image with opacity */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
+      <div className="absolute inset-0 z-0 overflow-hidden hidden md:block">
         <Image
           src="/images/footer-bg.jpg"
           alt="Footer background"
           fill
-          className="opacity-20 md:object-cover object-contain"
+          className="opacity-20 md:object-cover"
+        />
+      </div>
+      <div className="absolute inset-0 z-0 overflow-hidden md:hidden">
+        <Image
+          src="/images/footer-bg-mobile.jpg"
+          alt="Footer background"
+          fill
+          className="opacity-20 object-cover"
         />
       </div>
 
