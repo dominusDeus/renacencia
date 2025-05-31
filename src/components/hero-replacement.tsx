@@ -10,20 +10,25 @@ const HeroReplacement = () => {
   return (
     <div className="w-full font-opensans">
       {/* Header text */}
-      <div className="w-full relative py-4 bg-yellow-50">
+      <div className="w-full relative md:py-4 py-2 bg-yellow-50">
         <Image
           src={Butterflies.src}
           alt="Butterflies"
           fill
           className="object-cover opacity-50 blur-sm"
         />
-        <div className="relative z-10 text-xl text-center px-4">
+        <div className="relative z-10 md:text-xl text-sm text-center md:px-4 px-2">
           <span className="font-bold text-orange-500">
             Psicología Consciente
           </span>{" "}
           para la <span className="font-bold">Vida</span> y la{" "}
-          <span className="font-bold">Muerte</span> - Terapia con profesionales
-          que te comprenden
+          <span className="font-bold">Muerte </span>
+          <span className="hidden md:inline-block">
+            -{" "}
+            <span className="italic">
+              Renace al presente transformando el dolor en gratitud
+            </span>
+          </span>
         </div>
       </div>
 
@@ -38,6 +43,18 @@ const HeroReplacement = () => {
             className="object-cover"
             priority
           />
+        </div>
+        {/* ///SECOND LINE MOBILE */}
+        <div className="second-line-mobile w-full relative py-2">
+          <Image
+            src={Butterflies.src}
+            alt="Butterflies"
+            fill
+            className="object-cover opacity-50 blur-sm"
+          />
+          <div className="md:hidden relative z-10 text-[11px] font-bold text-center">
+            Renace al presente transformando el dolor en gratitud
+          </div>
         </div>
 
         {/* Right column - Content and images */}
