@@ -24,12 +24,12 @@ const FooterVariant = () => {
           src="/images/footer-bg.jpg"
           alt="Footer background"
           fill
-          className="opacity-20 object-cover"
+          className="opacity-20 md:object-cover object-fill"
         />
       </div>
 
       {/* Main content - Two columns */}
-      <div className="flex flex-col md:flex-row gap-8 relative p-6 max-w-[1100px] w-full mx-auto z-10">
+      <div className="flex flex-col md:flex-row md:gap-8 relative p-6 max-w-[1100px] w-full mx-auto z-10">
         {/* Left column with logo */}
         <div className="md:w-1/2 flex flex-col items-center justify-center">
           <div className="h-[350px] w-[350px] relative mb-4">
