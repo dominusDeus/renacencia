@@ -26,7 +26,7 @@ const HeroReplacement = () => {
           <span className="hidden md:inline-block">
             -{" "}
             <span className="italic">
-              Renace al presente transformando el dolor en gratitud
+              Renace al presente transformando tu dolor
             </span>
           </span>
         </div>

@@ -11,11 +11,9 @@ const faqList = [
     title: "¿Los seminarios son gratuitos siempre?",
     description: (
       <>
-        "Sí, entre las muchas actividades realizamos varios seminarios gratuitos
+        Sí, entre las muchas actividades realizamos varios seminarios gratuitos
         al año, con el fin de divulgar herramientas y reflexiones que ayuden a
-        las personas que necesitan un apoyo y no tengan acceso a otros recursos.
-        Nuestro objetivo principal es el bienestar de la humanidad y estaremos
-        siempre buscando la forma de contribuir para ello.
+        las personas que necesitan un apoyo en determinado momento de su vida.
       </>
     ),
   },
@@ -24,12 +22,10 @@ const faqList = [
       "¿Cuales son los descuentos anunciados para terapia grupal e individual?",
     description: (
       <>
-        El costo de terapia está calculado para cubrir la participación de los
-        terapeutas y sus debidas supervisiones. Los descuentos no se aplican
-        sobre sesiones sueltas sino sobre los diferentes paquetes. Por ejemplo:
-        En terapia grupal al pagar las 12 sesiones grupales se aplica un
-        descuento del 10%, lo mismo que al concretar todo el mes (o más) de
-        terapia individual.
+        Los descuentos no se aplican sobre sesiones sueltas sino sobre los
+        diferentes paquetes. Por ejemplo: En terapia grupal al pagar las 12
+        sesiones grupales se aplica un descuento del 10%, lo mismo que al
+        concretar todo el mes (o más) de terapia individual.
       </>
     ),
   },
@@ -47,17 +43,12 @@ const faqList = [
     title: "¿Qué tipo de terapeutas trabajan en las sesiones?",
     description: (
       <>
-        "En nuestra plataforma encontrarás{" "}
-        <span className="font-bold">
-          especialistas de psicología con titulación oficial, que han recorrido
-          un sendero de conocimiento interior desde la sensibilidad humana y el
-          deseo de evolución personal.{" "}
-        </span>
-        Creemos que la autenticidad y la experiencia personal son fundamentales
-        para acompañarte en un proceso de sanación, pues tenemos claro que{" "}
-        <span className="font-bold">
-          la terapia es ante todo un encuentro humano.
-        </span>
+        En nuestra plataforma encontrarás especialistas de psicología con
+        titulación oficial y terapeutas que han recorrido un sendero de
+        conocimiento interior desde la sensibilidad humana y el anhelo de
+        evolución personal. Sabemos que la autenticidad y la experiencia
+        personal son fundamentales para acompañarte en un proceso de sanación,
+        pues tenemos claro que la terapia es ante todo un encuentro humano.
       </>
     ),
   },
@@ -100,19 +91,13 @@ const faqList = [
     title: "¿Qué tipo de corriente de psicología y conocimiento utilizan?",
     description: (
       <>
-        "Nuestro enfoque es desde la{" "}
-        <span className="font-bold">psicología humanista, </span>
-        integrando en ella el desarrollo de
-        <span className="font-bold">psicología trascendental, </span>
-        presente en culturas esotéricas milenarias como
-        <span className="font-bold">
-          {" "}
-          budismo, hinduismo, teosofía, gnosis{" "}
-        </span>
-        y más corrientes de conocimiento. Cada profesional tiene además su
-        propio recorrido íntimo, y sigue en constante formación y
-        profundización, cosa que nos permite compartir con los demás desde un
-        lugar más consciente de cada proceso.
+        Nuestro enfoque es desde la psicología humanista, integrando en ella el
+        desarrollo desde un enfoque trascendental, presente en culturas de
+        conocimiento interior milenarias. Cada profesional tiene invariablemente
+        su propio recorrido íntimo y sigue en constante formación y
+        profundización en su compromiso con la sensibilidad humana. Esto nos
+        permite compartir y acompañar desde un lugar más consciente de cada
+        proceso.
       </>
     ),
   },
@@ -120,12 +105,12 @@ const faqList = [
     title: "¿En qué consiste el trabajo grupal?",
     description: (
       <>
-        "El trabajo grupal es un viaje de 12 semanas que emprendemos en
-        conjunto, guiado por profesionales que intervendrán puntualmente
-        acompañando la dinámica, para subrayar y facilitar con aquello que
-        enriquezca la experiencia. Exploramos diferentes ángulos para
-        reconocernos en el reflejo, conociendo en otras personas las propias
-        limitaciones y posibilidades de transformación.
+        El trabajo grupal es un viaje de 12 semanas que emprendemos en conjunto,
+        guiado por profesionales que acompañan la dinámica para facilitar en
+        aquello que enriquezca la experiencia. Exploramos diferentes ángulos
+        para reconocernos en el reflejo, conociendo en otras experiencias las
+        propias limitaciones y accediendo a nuevas posibilidades de
+        transformación.
       </>
     ),
   },
