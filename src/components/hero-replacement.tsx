@@ -28,7 +28,7 @@ const HeroReplacement = () => {
       </div>
 
       {/* Main content - two column layout for desktop, stacked for mobile */}
-      <div className="flex flex-col md:flex-row md:justify-center w-full">
+      <div className="flex flex-col md:flex-row md:justify-center w-full min-h-[500px]">
         {/* Left column - Hero image (full width on mobile, half width on desktop) */}
         <div className="w-full md:w-[500px] relative h-[300px] sm:h-[350px] md:h-[500px]">
           <Image
@@ -41,61 +41,36 @@ const HeroReplacement = () => {
         </div>
 
         {/* Right column - Content and images */}
-        <div className="w-full md:w-1/2 p-4 md:p-6">
+        <div className="w-full md:w-1/2 flex flex-col justify-between p-4 md:p-6 bg-white">
           {/* Seminar title */}
-          <div className="text-xl font-bold text-orange-600 mb-3 text-center md:text-center">
-            SEMINARIO ONLINE GRATUITO "VOLVIENDO A LA VIDA"
-          </div>
-          <div className="mb-4 text-center">
-            <div className="italic bg-opacity-50 text-red-700 text-[11px] bg-yellow-100 inline-block px-2 py-1">
-              <span className="font-bold">
-                🎁 DE REGALO: Un cupón de descuento
-              </span>{" "}
-              en terapia grupal o individual para quienes participen del
-              seminario
+          <div>
+            <div className="text-2xl md:text-2xl font-bold text-orange-500 mb-2 text-center">
+              SEMINARIO ONLINE GRATUITO “VOLVIENDO A LA VIDA”
             </div>
-          </div>
-          {/* Content area with responsive image layout */}
-          <div className="relative text-sm text-red-700">
-            {/* Booklet image - centered on mobile, float left on desktop */}
-            <div className="relative block tablet:hidden xl:block w-[150px] h-[174px] mx-auto mb-4 xl:float-left xl:mr-4 xl:mb-2 xl:mx-0">
-              <Image
-                src={Booklets.src}
-                alt="Volviendo a la Vida booklet"
-                fill
-                className="object-contain"
-              />
-            </div>
-
-            <p className="mb-3 text-center md:text-left">
-              Cuando la muerte se hace presente en nuestra vida, el mundo se
-              detiene y todo lo que parecía central, ahora deja de serlo.
-            </p>
-
-            <div className="mb-3 text-center md:text-left">
-              En este{" "}
-              <span className="font-bold text-red-700">seminario gratuito</span>
-              , reflexionaremos acerca de lo que la presencia de la muerte
-              significa en nuestra vida.
-              {/* Lore and Charly image floating right */}
-              <div className="relative w-[210px] h-[123px] xl:w-[280px] xl:h-[164px] float-right ml-4 mb-2 mt-2  hidden md:block">
-                <Image
-                  src={LoreAndCharly.src}
-                  alt="Lorena y Carlos"
-                  fill
-                  className="object-contain"
-                />
+            <div className="mb-4 text-center">
+              <div className="bg-yellow-100 rounded-md px-2 py-1 inline-block text-xs font-semibold text-red-700 shadow-sm">
+                <span className="align-middle">🎁</span> DE REGALO:{" "}
+                <span className="font-bold">Un cupón de descuento</span> en
+                terapia grupal o individual para quienes participen del
+                seminario
               </div>
-              <span className="font-bold text-red-700">
-                La psicóloga sanitaria con formación en duelo y terapeuta
-                Gestalt, Lorena Leiro Paz
-              </span>
-              , nos compartirá desde su experiencia profesional reflexiones y
-              herramientas que podemos aprovechar para volver a equilibrarnos y
-              abordar nuestros días desde una perspectiva nueva y superadora.
             </div>
+            <div className="text-base md:text-base text-red-800 mb-4">
+              <span className="font-bold">
+                Cuando la muerte se hace presente en nuestra vida
+              </span>
+              , el mundo se detiene y todo lo que parecía central ahora deja de
+              serlo. En este{" "}
+              <span className="font-bold">seminario gratuito abordaremos</span>{" "}
+              reflexiones y herramientas que podremos aprovechar para volver a
+              nuestro centro de equilibrio interior.
+            </div>
+          </div>
 
-            <div className="md:hidden relative w-[320px] h-[187px] float-right ml-4 mt-2">
+          {/* Speakers and Booklet section */}
+          <div className="flex flex-col md:flex-row items-center md:items-end md:justify-between mt-4 mb-6 md:mb-8">
+            {/* Speaker photo */}
+            <div className="relative w-[270px] h-[203px] md:w-[200px] md:h-[150px] mb-4 md:mb-0 md:mr-4 top-2">
               <Image
                 src={LoreAndCharly.src}
                 alt="Lorena y Carlos"
@@ -103,21 +78,41 @@ const HeroReplacement = () => {
                 className="object-contain"
               />
             </div>
-            {/* <p className="text-[10px] font-bold text-center max-w-screen md:hidden">
-              Lorena Leiro Psicóloga Sanitaria - Carlos Vega Musicoterapeuta
-            </p> */}
-
-            {/* Button */}
-            <div className="clear-both pt-3 text-center">
-              <button className="xl:mt-8 bg-green-600 text-white py-3 px-6 rounded-md font-semibold hover:bg-green-700 transition-colors w-full sm:w-auto">
-                <Link
-                  target="_blank"
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSeQD0BumxsIx6WassCzSXblOKnxpFqFtPdajQ9xngSkXkAS9Q/viewform?usp=sf_link"
-                >
-                  INSCRIBIRME AL SEMINARIO ONLINE GRATUITO "VOLVIENDO A LA VIDA"
-                </Link>
-              </button>
+            <div className="flex-1 flex flex-col items-center md:items-start pb-2 border-b-2 border-orange-500 border-dashed">
+              <div className="text-2xl md:text-3xl font-light text-orange-500 mb-2 text-center md:text-left">
+                Impartirán el Seminario
+              </div>
+              <div className="text-[15px] md:text-xs text-gray-800 text-center md:text-left font-bold">
+                Lorena Leiro Paz, Psicóloga Sanitaria con formación en duelo y
+                terapeuta Gestalt
+                <br />
+                junto a Carlos Alberto Vega, fundador de Renacencia.com,
+                escritor, divulgador
+                <br />
+                de conocimiento interior y musicoterapeuta.
+              </div>
             </div>
+            {/* Booklet image */}
+            <div className="relative w-[240px] h-[277px] md:w-[120px] md:h-[140px] ml-0 md:ml-4 mt-4 md:mt-0 top-1">
+              <Image
+                src={Booklets.src}
+                alt="Volviendo a la Vida booklet"
+                fill
+                className="object-contain"
+              />
+            </div>
+          </div>
+
+          {/* Button */}
+          <div className="pt-3 text-center w-full">
+            <button className="bg-green-600 text-white py-3 px-6 rounded-md font-semibold hover:bg-green-700 transition-colors w-full sm:w-auto">
+              <Link
+                target="_blank"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeQD0BumxsIx6WassCzSXblOKnxpFqFtPdajQ9xngSkXkAS9Q/viewform?usp=sf_link"
+              >
+                INSCRIBIRME AL SEMINARIO ONLINE GRATUITO "VOLVIENDO A LA VIDA"
+              </Link>
+            </button>
           </div>
         </div>
       </div>
