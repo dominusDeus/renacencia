@@ -53,7 +53,7 @@ const HeroReplacement = () => {
             className="object-cover opacity-50 blur-sm"
           />
           <div className=" relative z-10 text-[11px] font-bold text-center">
-            Renace al presente transformando el dolor en gratitud
+            Renace al presente transformando tu dolor
           </div>
         </div>
 
