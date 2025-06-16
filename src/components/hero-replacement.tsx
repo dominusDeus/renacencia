@@ -68,8 +68,7 @@ const HeroReplacement = () => {
               <span className="font-bold">
                 🎁 DE REGALO: Un cupón de descuento
               </span>{" "}
-              en terapia grupal o individual para quienes participen del
-              seminario
+              en el próximo taller para quienes participen del seminario
             </div>
           </div>
           {/* Content area with responsive image layout */}

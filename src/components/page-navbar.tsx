@@ -35,10 +35,7 @@ const PageNavbar: React.FC = () => {
               >
                 Inicio
               </a>
-              <a
-                href="#services"
-                className="text-orange-500 hover:text-pink transition-colors"
-              >
+              <a href="#services" className="hover:text-pink transition-colors">
                 Terapia Online
               </a>
               <a
@@ -83,37 +80,36 @@ const PageNavbar: React.FC = () => {
         {/* Mobile menu */}
         <div className={`md:hidden ${isMenuOpen ? "block" : "hidden"}`}>
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a
-              href="#"
-              className="block px-3 border-b border-gray-200 py-2 max-w-[80vw] rounded-md text-base font-medium text-gray-700 hover:text-pink hover:bg-gray-50"
+            <button
+              className="w-full text-start block px-3 border-b border-gray-200 py-2 max-w-[80vw] rounded-md text-base font-medium text-gray-700 hover:text-pink hover:bg-gray-50"
+              onClick={() => setIsMenuOpen(false)}
             >
-              Inicio
-            </a>
-            <a
-              href="#services"
-              className="text-orange-500 block px-3 border-b border-gray-200 py-2 max-w-[80vw] rounded-md text-base font-medium hover:text-pink hover:bg-gray-50"
+              <a href="#">Inicio</a>
+            </button>
+            <button
+              className="w-full text-start block px-3 border-b border-gray-200 py-2 max-w-[80vw] rounded-md text-base font-medium hover:text-pink hover:bg-gray-50"
+              onClick={() => setIsMenuOpen(false)}
             >
-              Terapia Online
-            </a>
-            <a
-              href="#talleres"
-              className="block px-3 border-b border-gray-200 py-2 max-w-[80vw] rounded-md text-base font-medium text-gray-700 hover:text-pink hover:bg-gray-50"
+              <a href="#services">Terapia Online</a>
+            </button>
+            <button
+              className="w-full text-start block px-3 border-b border-gray-200 py-2 max-w-[80vw] rounded-md text-base font-medium text-gray-700 hover:text-pink hover:bg-gray-50"
+              onClick={() => setIsMenuOpen(false)}
             >
-              Talleres
-            </a>
-
-            <a
-              href="#aboutus"
-              className="block px-3 border-b border-gray-200 py-2 max-w-[80vw] rounded-md text-base font-medium text-gray-700 hover:text-pink hover:bg-gray-50"
+              <a href="#talleres">Talleres</a>
+            </button>
+            <button
+              className="w-full text-start block px-3 border-b border-gray-200 py-2 max-w-[80vw] rounded-md text-base font-medium text-gray-700 hover:text-pink hover:bg-gray-50"
+              onClick={() => setIsMenuOpen(false)}
             >
-              Nosotros
-            </a>
-            <a
-              href="#contact"
-              className="block px-3 border-b border-gray-200 py-2 max-w-[80vw] rounded-md text-base font-medium text-gray-700 hover:text-pink hover:bg-gray-50"
+              <a href="#aboutus">Nosotros</a>
+            </button>
+            <button
+              className="w-full text-start block px-3 border-b border-gray-200 py-2 max-w-[80vw] rounded-md text-base font-medium text-gray-700 hover:text-pink hover:bg-gray-50"
+              onClick={() => setIsMenuOpen(false)}
             >
-              Contacto
-            </a>
+              <a href="#contact">Contacto</a>
+            </button>
           </div>
         </div>
       </nav>
