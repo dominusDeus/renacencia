@@ -19,9 +19,9 @@ export const Biography = () => {
 
       {/* MOBILE LAYOUT */}
       <div className="md:hidden px-4">
-        <div className="h-[260px] flex justify-center w-full">
+        <div className=" relative z-10 h-[260px] flex justify-center w-full">
           <Image
-            src="/images/carlos-vega-3.jpeg"
+            src="/images/charly-2.0.jpeg"
             alt="Autor Carlos Vega"
             width={260}
             height={400}
@@ -65,7 +65,7 @@ export const Biography = () => {
           <div className="flex flex-col items-center">
             <div className="w-[293px] h-[293px] flex">
               <Image
-                src="/images/carlos-vega-3.jpeg"
+                src="/images/charly-2.0.jpeg"
                 alt="Autor Carlos Vega"
                 width={293}
                 height={395}
