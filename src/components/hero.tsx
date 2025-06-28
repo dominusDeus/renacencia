@@ -44,7 +44,7 @@ const Hero = () => {
             className=" bg-green-600 hover:bg-green-700 text-white text-base px-4 py-2 md:max-w-none font-opensans rounded-md font-semibold max-w-xs"
           >
             <Link
-              href="https://api.whatsapp.com/send/?phone=34624840232&text=Hola%20viacosmos%2C%20me%20interesar%C3%ADa%20inscribirme%20al%20seminario%20gratuito&type=phone_number&app_absent=0"
+              href="https://api.whatsapp.com/send/?phone=34624840232&text=Hola%20Carlos%20de%20Renacencia,%20quisiera%20por%20favor%20saber%20un%20poco%20más."
               className="block truncate md:overflow-visible w-[calc(327px-2rem)] md:w-auto font-opensans"
             >
               AGENDA TU ENTREVISTA GRATUITA DE VALORACION,
