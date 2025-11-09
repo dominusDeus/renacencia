@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback, type JSX } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import HeroImage from "../../public/images/hero-img.png";
 import Butterflies from "../../public/images/butterflies.png";
