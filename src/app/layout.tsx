@@ -1,22 +1,18 @@
 import type { Metadata } from "next";
-import { Montserrat, Open_Sans } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-montserrat",
-});
-
-const openSans = Open_Sans({
-  subsets: ["latin"],
-  variable: "--font-opensans",
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
   title: "Renacencia",
   description:
-    "…La vida y la muerte son un solo hilo, la misma línea pero vista desde diferentes lados",
+    "Renacencia propone una mirada serena y humana sobre la vida, la muerte y el duelo.",
   icons: {
     icon: "/isotipo/favicon.png",
   },
@@ -28,8 +24,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className={`${montserrat.variable} ${openSans.variable}`}>
-      <body className="font-montserrat text-brand-dark">
+    <html lang="es" className={montserrat.variable}>
+      <body className="font-montserrat bg-background text-foreground antialiased">
         {children}
         <Analytics />
       </body>
