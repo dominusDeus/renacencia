@@ -17,13 +17,9 @@ const activityIcons = {
 
 export function ActivitiesSection() {
   return (
-    <Section id="actividades" className="scroll-mt-24">
+    <Section id="servicios" className="scroll-mt-24">
       <Container>
-        <SectionTitle
-          eyebrow="acompañamiento"
-          title="Actividades"
-          description="Instancias pensadas para abrir conversación, sostener procesos y acercarnos a la experiencia del duelo con profundidad y cuidado."
-        />
+        <SectionTitle title="Servicios" />
 
         <div className="relative mt-10 lg:mt-14">
           <div

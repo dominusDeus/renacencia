@@ -10,7 +10,7 @@ import { Container, NavLink } from "@/components/landing/primitives";
 import { cn } from "@/lib/utils";
 
 const navItems = [
-  { href: "#actividades", label: "Actividades" },
+  { href: "#servicios", label: "Servicios" },
   { href: "#nosotros", label: "Nosotros" },
   { href: "#contacto", label: "Contacto" },
 ] as const;
@@ -50,19 +50,19 @@ export function LandingNavbar() {
             className="relative h-11 w-11 shrink-0 rounded-full focus-visible:ring-4 focus-visible:ring-[var(--color-accent-focus)] focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:h-12 sm:w-12"
           >
             <Image
-              src="/isotipo/renacencia-menu.png"
+              src="/isotipo/logo-navbar.png"
               alt="Logo de Renacencia"
               fill
               sizes="48px"
-              className="object-contain"
+              className="object-contain pb-1.5"
               priority
             />
           </Link>
           <p className="min-w-0 text-xs italic leading-5 text-[var(--color-muted-text)] sm:text-sm">
             Otra mirada de la{" "}
             <strong className="font-semibold text-foreground">muerte</strong>{" "}
-            para aprender a{" "}
-            <strong className="font-semibold text-foreground">vivir</strong>
+            otra mirada de la{" "}
+            <strong className="font-semibold text-foreground">vida</strong>
           </p>
         </div>
 

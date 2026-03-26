@@ -2,7 +2,6 @@ import { ActivitiesSection } from "@/components/landing/activities-section";
 import { AboutSection } from "@/components/landing/about-section";
 import { HeroSection } from "@/components/landing/hero-section";
 import { LandingNavbar } from "@/components/landing/landing-navbar";
-import { SeminarCta } from "@/components/landing/seminar-cta";
 import { SiteFooter } from "@/components/landing/site-footer";
 
 export default function Home() {
@@ -11,7 +10,6 @@ export default function Home() {
       <LandingNavbar />
       <main>
         <HeroSection />
-        <SeminarCta />
         <ActivitiesSection />
         <AboutSection />
       </main>

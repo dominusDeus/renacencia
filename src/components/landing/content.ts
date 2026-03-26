@@ -12,41 +12,29 @@ export type HeroBlock = {
 
 export const heroContent = {
   kicker: "vida, muerte y duelo",
-  lead: "Hay algo que cambia cuando alguien muere.",
+  lead: "Algo muy fuerte sucede cuando alguien querido muere.",
   blocks: [
     {
       lines: [
-        "No es solo su ausencia.",
-        "Es la forma en que sigues relacionada/o con esa persona.",
+        "El dolor suele ser tan intenso que nos centramos en su ausencia",
+        "y dejamos de ver lo más importante: El vínculo no desapareció.",
       ],
     },
     {
       lines: [
-        [
-          { text: "Porque, aunque ya no esté físicamente, " },
-          { text: "el amor no desaparece", bold: true },
-          { text: ", y por tanto el vínculo tampoco." },
-        ],
+        "Porque, aunque ya no esté físicamente,",
+        "si el amor permanece, la relación continúa.",
       ],
     },
     {
       lines: [
-        "Sigue presente de otras maneras.",
-        "En las que aún te acompaña.",
-        "Y, sin embargo, casi nadie sabe qué hacer con eso.",
+        "En Renacencia exploramos de muchas maneras",
+        "qué es lo que ocurre con ese vínculo",
+        "y cómo aprender a vivirlo en esta nueva forma.",
       ],
     },
     {
-      lines: [
-        [
-          { text: "Renacencia", bold: true },
-          {
-            text:
-              " nace como un espacio para entender qué ocurre con ese vínculo y cómo aprender a vivir con él",
-          },
-        ],
-        "en esta nueva forma.",
-      ],
+      lines: [[{ text: "¿Te gustaría profundizar en esto?", bold: true }]],
     },
   ],
 } as const satisfies {
@@ -60,7 +48,7 @@ export const activities = [
     title: "Terapia grupal",
     icon: "group",
     description:
-      "Un espacio contenido para transitar el duelo en comunidad, con escucha, preguntas y acompañamiento respetuoso.",
+      "Reuniones pensadas para abrir conversación, sostener procesos y acercarnos a la experiencia del duelo grupalmente con profundidad y cuidado.",
   },
   {
     title: "Seminarios",
@@ -87,7 +75,7 @@ export const people = [
     alt: "Carlos Vega en retrato en blanco y negro",
     objectPosition: "50% 22%",
     description:
-      "Carlos Vega, Musicoterapeuta. Se desempeñó brevemente en periodismo antes de abocarse de lleno a la divulgación presencial a través de más de 500 conferencias impartidas por Latinoamérica y Europa. En sus más de 25 años de trayectoria acompañó procesos de conocimiento interior, creando espacios de reflexión y estudios sobre el sentido de la vida y la muerte.",
+      "Musicoterapeuta, divulgador y escritor. Se desempeñó brevemente en periodismo antes de dedicarse de lleno a la divulgación del desarrollo interior con alrededor de 500 conferencias impartidas en distintos puntos de Latinoamérica y Europa. En sus más de 20 años de trayectoria acompañó procesos de conocimiento interior, creando espacios de reflexión acerca del sentido de la vida y la muerte.",
   },
   {
     name: "Lorena Leiro",
@@ -95,7 +83,7 @@ export const people = [
     alt: "Lorena Leiro en retrato en blanco y negro",
     objectPosition: "50% 28%",
     description:
-      "Lorena Leiro. Es psicóloga sanitaria y terapeuta Gestalt, con más de 18 años de experiencia en salud mental, tanto en práctica clínica como en proyectos de cooperación internacional en América Latina. Su enfoque es humanista e integrador, con especial atención a los procesos emocionales, relacionales y vitales. Tiene formación especializada en EMDR Nivel I y II (trauma), sistémica, duelo y apego.",
+      "Es psicóloga sanitaria y terapeuta Gestalt, con más de 18 años de experiencia en salud mental, tanto en práctica clínica como en proyectos de cooperación internacional en América Latina. Su enfoque es humanista e integrador, con especial atención a los procesos emocionales, relacionales y vitales. Cuenta con formación especializada en EMDR Nivel I y II (trauma), sistémica, duelo y apego.",
   },
 ] as const;
 

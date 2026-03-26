@@ -1,10 +1,14 @@
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
+
 import type { HeroLine } from "@/components/landing/content";
-import { heroContent } from "@/components/landing/content";
+import { heroContent, seminarUrl } from "@/components/landing/content";
 import {
   Container,
   MediaFrame,
   Section,
 } from "@/components/landing/primitives";
+import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 function HeroLineContent({ line }: { line: HeroLine }) {
@@ -31,13 +35,13 @@ export function HeroSection() {
   const { kicker, lead, blocks } = heroContent;
 
   return (
-    <Section className="overflow-hidden pt-10 sm:pt-12 lg:pt-16">
+    <Section className="overflow-hidden pt-10 sm:pt-8 lg:pt-8">
       <Container className="relative">
         <div className="hero-stage">
           <div className="relative z-[1] grid items-start gap-10 lg:grid-cols-[minmax(0,0.78fr)_minmax(0,1fr)] lg:items-stretch lg:gap-14 xl:gap-20">
-            <div className="order-1 lg:flex lg:h-full lg:min-h-0 lg:flex-col lg:justify-center lg:self-stretch lg:sticky lg:top-[calc(var(--nav-height)+2rem)]">
-              <div className="mx-auto w-full max-w-[21rem] lg:mx-0 lg:max-w-[25rem]">
-                <MediaFrame className="aspect-[5/8] p-2 sm:p-3">
+            <div className="order-1 lg:flex lg:h-full lg:min-h-0 lg:flex-col lg:self-stretch">
+              <div className="mx-auto w-full max-w-[21rem] lg:mx-0 lg:h-full lg:max-w-[25rem]">
+                <MediaFrame className="aspect-[5/8] p-2 sm:p-3 lg:h-full lg:aspect-auto">
                   <div className="relative h-full w-full overflow-hidden rounded-[1.1rem] bg-[var(--color-fg)]">
                     <video
                       className="h-full w-full object-cover"
@@ -72,8 +76,8 @@ export function HeroSection() {
 
               <div
                 className={cn(
-                  "flex min-h-0 flex-1 flex-col gap-4 sm:gap-5",
-                  "lg:min-h-0 lg:justify-between lg:gap-0"
+                  "flex min-h-0 flex-1 flex-col gap-5 sm:gap-6",
+                  "lg:h-full lg:min-h-0 lg:justify-between lg:gap-6"
                 )}
               >
                 {blocks.map((block, blockIndex) => (
@@ -93,6 +97,20 @@ export function HeroSection() {
                     ))}
                   </p>
                 ))}
+
+                <div className="pt-1 sm:pt-2 lg:pt-3">
+                  <Button asChild size="lg" className="w-full sm:w-auto">
+                    <Link
+                      href={seminarUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label="Inscribirte al seminario en un formulario externo"
+                    >
+                      INSCRIBITE AQUÍ AL SEMINARIO
+                      <ArrowUpRight className="h-4 w-4" />
+                    </Link>
+                  </Button>
+                </div>
               </div>
             </div>
           </div>

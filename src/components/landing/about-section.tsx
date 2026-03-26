@@ -25,7 +25,8 @@ export function AboutSection() {
           <SectionTitle
             eyebrow="quienes somos"
             title="Nosotros"
-            description="Renacencia se sostiene en una presencia cercana, una escucha cuidada y el deseo de abrir un espacio donde lo humano pueda ser nombrado sin apuro."
+            description="Abordar la muerte es afrontar lo desconocido, y  nuestra cultura nos acerca a ella desde el temor al misterio. Renacencia surge de una comprensión central: aunque llegue el fin del cuerpo, la relación con el Ser que le habitaba no desaparece. Y si nos une el amor, el vínculo es indestructible. Al entender que la muerte es transformación, nuestra mirada cambia: La cuestión no es decir adios, sino como aprender a relacionarnos desde esta nueva forma.
+Renacencia incluye las palabras renacimiento, resiliencia, consciencia y esencia. Es decir, todo lo que atraviesa quien vive la experiencia de integrar la muerte como parte de la vida."
             className="max-w-[var(--reading-width)]"
           />
 

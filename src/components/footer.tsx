@@ -67,7 +67,7 @@ const Footer = () => {
                   </span>{" "}
                 </p>
                 <p className="text-xs md:text-sm font-bold py-2 underline">
-                  infoviacosmos@gmail.com
+                  volviendoalavida@renacencia.com
                 </p>
                 <p className="text-xs md:text-sm">
                   Respondemos a todas las consultas en un plazo máximo de 24
