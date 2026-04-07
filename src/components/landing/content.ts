@@ -71,7 +71,7 @@ export const activities = [
 export const people = [
   {
     name: "Carlos Vega",
-    image: "/assets/charly-bn.png",
+    image: "/assets/charly.jpeg",
     alt: "Carlos Vega en retrato en blanco y negro",
     objectPosition: "50% 22%",
     description:
@@ -79,7 +79,7 @@ export const people = [
   },
   {
     name: "Lorena Leiro",
-    image: "/assets/lore-bn.png",
+    image: "/assets/lore.jpeg",
     alt: "Lorena Leiro en retrato en blanco y negro",
     objectPosition: "50% 28%",
     description:
