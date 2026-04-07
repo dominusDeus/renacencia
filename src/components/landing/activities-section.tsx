@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { BookOpen, Sparkles, UsersRound, type LucideIcon } from "lucide-react";
 
 import { activities } from "@/components/landing/content";
@@ -7,6 +8,7 @@ import {
   SectionTitle,
   SimpleCard,
 } from "@/components/landing/primitives";
+import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 const activityIcons = {
@@ -75,6 +77,17 @@ export function ActivitiesSection() {
                 </SimpleCard>
               );
             })}
+          </div>
+
+          <div className="relative mt-8 flex flex-col gap-5 rounded-[1.75rem] border-[var(--color-border-subtle)] bg-[linear-gradient(180deg,rgba(255,250,245,0.92)_0%,rgba(255,255,255,0.82)_100%)] px-6 py-7 shadow-[0_18px_50px_-38px_rgba(12,10,9,0.35)] sm:px-8 sm:py-8 lg:mt-10 lg:flex-row lg:items-center lg:justify-between lg:gap-8">
+            <p className="ds-body-lg max-w-2xl text-pretty text-[var(--color-muted-text)]">
+              Si quieres saber más no dudes en ponerte en contacto con
+              Renacencia y te responderemos a la brevedad.
+            </p>
+
+            <Button asChild size="lg" className="w-full sm:w-auto">
+              <Link href="#contacto">CONTACTAR con Renacencia</Link>
+            </Button>
           </div>
         </div>
       </Container>
