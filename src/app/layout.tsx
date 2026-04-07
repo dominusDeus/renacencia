@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description:
     "Renacencia propone una mirada serena y humana sobre la vida, la muerte y el duelo.",
   icons: {
-    icon: "/isotipo/favicon.png",
+    icon: "/isotipo/logo-navbar.png",
   },
 };
 

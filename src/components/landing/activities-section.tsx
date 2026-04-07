@@ -19,7 +19,10 @@ export function ActivitiesSection() {
   return (
     <Section id="servicios" className="scroll-mt-24">
       <Container>
-        <SectionTitle title="Servicios" />
+        <SectionTitle
+          title="¿Que hacemos?"
+          description="Con Renacencia queremos crear un espacio para permitir otra mirada y abrir caminos que antes parecían cerrados. Además de charlas, entrevistas, tertulias, reflexiones, podcasts y todo lo que surja al andar, nos ponemos al servicio a través de estas 3 propuestas concretas…"
+        />
 
         <div className="relative mt-10 lg:mt-14">
           <div

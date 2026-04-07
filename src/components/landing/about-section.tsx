@@ -25,8 +25,7 @@ export function AboutSection() {
           <SectionTitle
             eyebrow="quienes somos"
             title="Nosotros"
-            description="Abordar la muerte es afrontar lo desconocido, y  nuestra cultura nos acerca a ella desde el temor al misterio. Renacencia surge de una comprensión central: aunque llegue el fin del cuerpo, la relación con el Ser que le habitaba no desaparece. Y si nos une el amor, el vínculo es indestructible. Al entender que la muerte es transformación, nuestra mirada cambia: La cuestión no es decir adios, sino como aprender a relacionarnos desde esta nueva forma.
-Renacencia incluye las palabras renacimiento, resiliencia, consciencia y esencia. Es decir, todo lo que atraviesa quien vive la experiencia de integrar la muerte como parte de la vida."
+            description="Renacencia surge de una comprensión coincidente de Lorena y Carlos tras sus experiencias con la muerte: Que el duelo no es hacia el Ser querido que fallece, sino hacia viejos hábitos de relacionarnos que toman estados más sutiles de expresión. Por eso una de nuestras máximas es que el vínculo tiene continuidad, y el duelo cada quien debe vivirlo en su libertad sin sentirse forzada/o nunca a decir adiós. La palabra Renacencia fue formada con las palabras: Renacimiento, Resiliencia, Consciencia y Esencia. Es decir, todo lo que implica la experiencia de la integración de la muerte con la vida."
             className="max-w-[var(--reading-width)]"
           />
 

@@ -77,54 +77,142 @@ export function SiteFooter() {
 
                 <DialogContent className="max-h-[85vh] max-w-2xl overflow-y-auto">
                   <DialogHeader>
-                    <DialogTitle>Términos y condiciones</DialogTitle>
-                    <DialogDescription>
+                    <DialogTitle>
+                      TÉRMINOS, CONDICIONES Y AVISO LEGAL
+                    </DialogTitle>
+                    <DialogDescription className="sr-only">
                       Condiciones generales de uso del sitio Renacencia.
                     </DialogDescription>
                   </DialogHeader>
 
                   <div className="space-y-4 text-sm leading-relaxed text-[var(--color-muted-text)]">
-                    <p>
-                      Este sitio tiene como objetivo compartir información sobre
-                      actividades, talleres y propuestas de acompañamiento en
-                      torno a la vida, la muerte y el duelo. El uso de este
-                      sitio implica la aceptación de estos términos.
-                    </p>
-                    <p>
-                      El contenido publicado es de carácter informativo y
-                      educativo. No reemplaza atención médica, psicológica o de
-                      emergencia. Si atravesás una situación crítica o de
-                      urgencia, te recomendamos contactar a servicios
-                      profesionales y de emergencia de tu zona.
-                    </p>
-                    <p>
-                      Las personas usuarias se comprometen a utilizar este sitio
-                      de forma respetuosa, sin realizar acciones que puedan
-                      afectar su funcionamiento o vulnerar derechos de terceros.
-                    </p>
-                    <p>
-                      Los textos, imágenes, materiales y elementos de identidad
-                      visual de Renacencia son de uso reservado. No está
-                      permitida su reproducción total o parcial con fines
-                      comerciales sin autorización previa.
-                    </p>
-                    <p>
-                      Este sitio puede incluir enlaces a plataformas externas
-                      (por ejemplo, formularios o redes sociales). Renacencia no
-                      controla ni asume responsabilidad por contenidos,
-                      políticas o prácticas de terceros.
-                    </p>
-                    <p>
-                      Para consultas legales o sobre el uso de contenidos, podés
-                      escribir a{" "}
-                      <a
-                        href="mailto:volviendoalavida@renacencia.com"
-                        className="underline underline-offset-4 hover:text-foreground"
-                      >
-                        volviendoalavida@renacencia.com
-                      </a>
-                      .
-                    </p>
+                    <section className="space-y-2">
+                      <h3 className="text-sm font-semibold text-foreground">
+                        1. TITULARIDAD Y OBJETO
+                      </h3>
+                      <p>
+                        El presente documento regula el acceso y uso del sitio
+                        web renacencia.com (en adelante, &quot;el Sitio&quot;).
+                        El Sitio es gestionado por el equipo de Renacencia (en
+                        adelante, &quot;el Titular&quot;), cuya vía de contacto
+                        principal es volviendoalavida@renacencia.com. El acceso
+                        a la web le atribuye la condición de Usuario, lo cual
+                        implica la aceptación plena y sin reservas de todas y
+                        cada una de las disposiciones incluidas en este Aviso
+                        Legal.
+                      </p>
+                    </section>
+
+                    <section className="space-y-2">
+                      <h3 className="text-sm font-semibold text-foreground">
+                        2. NATURALEZA DE LOS CONTENIDOS Y SERVICIOS
+                      </h3>
+                      <p>
+                        Los contenidos, materiales y posibles propuestas de
+                        acompañamiento disponibles en el Sitio tienen una
+                        finalidad informativa, divulgativa y pedagógica. Si bien
+                        el proyecto cuenta con supervisión de profesionales del
+                        ámbito de la psicología sanitaria, el uso del Sitio no
+                        establece de forma automática una relación
+                        facultativo-paciente ni constituye un diagnóstico
+                        clínico. El Titular se reserva el derecho a modificar,
+                        suspender o cancelar la oferta de contenidos o servicios
+                        en cualquier momento y sin previo aviso, incluyendo la
+                        futura implementación de servicios remunerados bajo
+                        condiciones que serán especificadas en su momento.
+                      </p>
+                    </section>
+
+                    <section className="space-y-2">
+                      <h3 className="text-sm font-semibold text-foreground">
+                        3. EXONERACIÓN DE RESPONSABILIDAD
+                      </h3>
+                      <p>
+                        El Usuario accede al Sitio bajo su propia
+                        responsabilidad. El Titular no se hace responsable de:
+                      </p>
+                      <ul className="list-disc space-y-1 pl-5">
+                        <li>
+                          La interpretación errónea o malintencionada de la
+                          información publicada.
+                        </li>
+                        <li>
+                          Las decisiones personales, de salud o legales tomadas
+                          por el Usuario basadas en el contenido del Sitio.
+                        </li>
+                        <li>
+                          Situaciones de crisis o urgencias médicas del Usuario,
+                          quien reconoce que este Sitio no es un servicio de
+                          emergencia.
+                        </li>
+                        <li>
+                          Posibles errores tecnológicos, virus o interrupciones
+                          en el servicio.
+                        </li>
+                      </ul>
+                    </section>
+
+                    <section className="space-y-2">
+                      <h3 className="text-sm font-semibold text-foreground">
+                        4. PROPIEDAD INTELECTUAL Y USO DE CONTENIDOS
+                      </h3>
+                      <p>
+                        La totalidad de este sitio (textos, logotipos, imágenes,
+                        audios y estructura de navegación) está protegida por
+                        las leyes de Propiedad Intelectual nacionales e
+                        internacionales. Queda terminantemente prohibida la
+                        reproducción, transformación, distribución o
+                        explotación comercial de cualquier elemento del Sitio
+                        sin el consentimiento expreso y por escrito del Titular.
+                        El uso no autorizado dará lugar a las acciones legales
+                        correspondientes.
+                      </p>
+                    </section>
+
+                    <section className="space-y-2">
+                      <h3 className="text-sm font-semibold text-foreground">
+                        5. POLÍTICA DE PRIVACIDAD Y PROTECCIÓN DE DATOS
+                      </h3>
+                      <p>
+                        En cumplimiento de los estándares de protección de
+                        datos, se informa que la información facilitada
+                        voluntariamente por el Usuario a través del correo
+                        electrónico de contacto será tratada con la única
+                        finalidad de gestionar la consulta o solicitud
+                        realizada. El Titular no cede datos a terceros salvo
+                        obligación legal. El Usuario puede ejercer sus derechos
+                        de acceso, rectificación o supresión enviando una
+                        comunicación al correo de contacto indicado.
+                      </p>
+                    </section>
+
+                    <section className="space-y-2">
+                      <h3 className="text-sm font-semibold text-foreground">
+                        6. ENLACES A TERCEROS
+                      </h3>
+                      <p>
+                        El Sitio puede contener enlaces a plataformas externas
+                        (redes sociales, formularios, etc.). El Titular no
+                        asume responsabilidad alguna por las políticas de
+                        privacidad, contenidos o prácticas de dichos sitios
+                        externos.
+                      </p>
+                    </section>
+
+                    <section className="space-y-2">
+                      <h3 className="text-sm font-semibold text-foreground">
+                        7. MODIFICACIONES Y JURISDICCIÓN
+                      </h3>
+                      <p>
+                        El Titular se reserva el derecho a actualizar estos
+                        términos para adaptarlos a novedades legislativas o
+                        comerciales. Cualquier controversia derivada del uso del
+                        Sitio se someterá a la legislación vigente y a la
+                        competencia de los juzgados y tribunales del país de
+                        origen del Titular, renunciando el Usuario a cualquier
+                        otro fuero que pudiera corresponderle.
+                      </p>
+                    </section>
                   </div>
                 </DialogContent>
               </Dialog>

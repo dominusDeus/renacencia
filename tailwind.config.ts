@@ -82,6 +82,7 @@ export default {
           pale: "#e6cb9e",
           softgreen: "#c9cfca",
           rose: "#e5748c",
+          orange: "#F97316",
         },
       },
       borderRadius: {

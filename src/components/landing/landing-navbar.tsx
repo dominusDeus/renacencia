@@ -10,7 +10,7 @@ import { Container, NavLink } from "@/components/landing/primitives";
 import { cn } from "@/lib/utils";
 
 const navItems = [
-  { href: "#servicios", label: "Servicios" },
+  { href: "#servicios", label: "¿Que hacemos?" },
   { href: "#nosotros", label: "Nosotros" },
   { href: "#contacto", label: "Contacto" },
 ] as const;
@@ -61,6 +61,7 @@ export function LandingNavbar() {
           <p className="min-w-0 text-xs italic leading-5 text-[var(--color-muted-text)] sm:text-sm">
             Otra mirada de la{" "}
             <strong className="font-semibold text-foreground">muerte</strong>{" "}
+            <br />
             otra mirada de la{" "}
             <strong className="font-semibold text-foreground">vida</strong>
           </p>
@@ -71,7 +72,11 @@ export function LandingNavbar() {
           aria-label="Navegacion principal"
         >
           {navItems.map((item) => (
-            <NavLink key={item.href} href={item.href}>
+            <NavLink
+              className="hover:text-brand-orange"
+              key={item.href}
+              href={item.href}
+            >
               {item.label}
             </NavLink>
           ))}

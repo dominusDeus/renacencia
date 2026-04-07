@@ -34,7 +34,10 @@ export const heroContent = {
       ],
     },
     {
-      lines: [[{ text: "¿Te gustaría profundizar en esto?", bold: true }]],
+      lines: [
+        [{ text: "¿Te gustaría profundizar en esto?", bold: true }],
+        "El próximo día 28 de Abril de 2026 estaremos dando una charla gratuita para abordar todo esto y mucho más…te esperamos.",
+      ],
     },
   ],
 } as const satisfies {
