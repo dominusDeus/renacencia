@@ -30,7 +30,7 @@ export function Section({
 type SectionTitleProps = {
   title: string;
   eyebrow?: string;
-  description?: string;
+  description?: string | React.ReactNode;
   align?: "left" | "center";
   className?: string;
 };

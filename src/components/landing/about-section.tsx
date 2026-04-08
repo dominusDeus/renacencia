@@ -25,7 +25,19 @@ export function AboutSection() {
           <SectionTitle
             eyebrow="quienes somos"
             title="Nosotros"
-            description="Renacencia surge de una comprensión coincidente de Lorena y Carlos tras sus experiencias con la muerte: Que el duelo no es hacia el Ser querido que fallece, sino hacia viejos hábitos de relacionarnos que toman estados más sutiles de expresión. Por eso una de nuestras máximas es que el vínculo tiene continuidad, y el duelo cada quien debe vivirlo en su libertad sin sentirse forzada/o nunca a decir adiós. La palabra Renacencia fue formada con las palabras: Renacimiento, Resiliencia, Consciencia y Esencia. Es decir, todo lo que implica la experiencia de la integración de la muerte con la vida."
+            description={
+              <p>
+                Renacencia es el resultado de una comprensión compartida a la
+                que llegaron Lorena y Carlos tras su experiencia con la muerte:
+                el vínculo no se pierde, sino que continúa en formas más
+                sutiles. <br /> Por eso entendemos el duelo como un proceso que
+                cada quien debe vivir en libertad, sabiendo que decir adiós no
+                es un camino obligado cuando el amor continúa. <br /> Renacencia
+                reúne en su nombre las palabras renacimiento, resiliencia,
+                consciencia y esencia: todo lo que implica integrar la muerte
+                como parte de la vida.
+              </p>
+            }
             className="max-w-[var(--reading-width)]"
           />
 
