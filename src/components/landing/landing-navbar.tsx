@@ -10,7 +10,7 @@ import { Container, NavLink } from "@/components/landing/primitives";
 import { cn } from "@/lib/utils";
 
 const navItems = [
-  { href: "#servicios", label: "¿Que hacemos?" },
+  { href: "#servicios", label: "¿Qué hacemos?" },
   { href: "#nosotros", label: "Nosotros" },
   { href: "#contacto", label: "Contacto" },
 ] as const;
@@ -43,18 +43,18 @@ export function LandingNavbar() {
   return (
     <header className="sticky top-0 z-[var(--z-nav)] border-b border-[rgba(231,229,228,0.88)] bg-white/88 backdrop-blur-xl">
       <Container className="flex min-h-[var(--nav-height)] items-center justify-between gap-4 py-3">
-        <div className="flex min-w-0 flex-1 items-center gap-3 sm:gap-4">
+        <div className="flex min-w-0 flex-1 items-center gap-3.5 sm:gap-4.5">
           <Link
             href="/"
             aria-label="Ir al inicio de Renacencia"
-            className="relative h-11 w-11 shrink-0 rounded-full focus-visible:ring-4 focus-visible:ring-[var(--color-accent-focus)] focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:h-12 sm:w-12"
+            className="relative h-[3.2rem] w-[3.2rem] shrink-0 rounded-full focus-visible:ring-4 focus-visible:ring-[var(--color-accent-focus)] focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:h-[3.7rem] sm:w-[3.7rem]"
           >
             <Image
               src="/isotipo/logo-navbar.png"
               alt="Logo de Renacencia"
               fill
-              sizes="48px"
-              className="object-contain pb-1.5"
+              sizes="(min-width: 640px) 60px, 52px"
+              className="object-contain pb-1"
               priority
             />
           </Link>

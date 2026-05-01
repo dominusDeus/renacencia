@@ -25,19 +25,7 @@ export function AboutSection() {
           <SectionTitle
             eyebrow="quienes somos"
             title="Nosotros"
-            description={
-              <p>
-                Renacencia es el resultado de una comprensión compartida a la
-                que llegaron Lorena y Carlos tras su experiencia con la muerte:
-                el vínculo no se pierde, sino que continúa en formas más
-                sutiles. <br /> Por eso entendemos el duelo como un proceso que
-                cada quien debe vivir en libertad, sabiendo que decir adiós no
-                es un camino obligado cuando el amor continúa. <br /> Renacencia
-                reúne en su nombre las palabras renacimiento, resiliencia,
-                consciencia y esencia: todo lo que implica integrar la muerte
-                como parte de la vida.
-              </p>
-            }
+            description="Lorena y Carlos llegaron a Renacencia por caminos distintos con la misma comprensión: La muerte no acaba los vínculos, los transforma. Desde ahí construyeron este proyecto que reúne psicología, espiritualidad y más de dos décadas de acompañamiento a personas en procesos de crecimiento interior. Renacencia nace no para enseñar a despedirse, sino para aprender a seguir conectados de otra manera."
             className="max-w-[var(--reading-width)]"
           />
 

@@ -12,31 +12,31 @@ export type HeroBlock = {
 
 export const heroContent = {
   kicker: "vida, muerte y duelo",
-  lead: "Algo muy fuerte sucede cuando alguien querido muere.",
+  lead: "Lo que te enseñaron sobre la muerte te está limitando.",
   blocks: [
     {
       lines: [
-        "El dolor suele ser tan intenso que nos centramos en su ausencia",
-        "y dejamos de ver lo más importante: El vínculo no desapareció.",
+        "Crecimos con una idea heredada: la muerte es el fin, y la pérdida una herida que hay que superar y dejar atrás.",
       ],
     },
     {
       lines: [
-        "Porque, aunque ya no esté físicamente,",
-        "si el amor permanece, la relación continúa.",
+        "Pero esa programación es precisamente lo que nos impide transitar los duelos con libertad y vivir con más plenitud.",
       ],
     },
     {
       lines: [
-        "En Renacencia exploramos de muchas maneras",
-        "qué es lo que ocurre con ese vínculo",
-        "y cómo aprender a vivirlo en esta nueva forma.",
+        "En Renacencia cuestionamos esas creencias desde la raíz. Exploramos la muerte como transformación, el vínculo como algo que no se interrumpe, y el duelo como uno de los mayores catalizadores de consciencia que existen.",
       ],
     },
     {
       lines: [
-        [{ text: "¿Te gustaría profundizar en esto?", bold: true }],
-        "El próximo día 28 de Abril de 2026 estaremos dando una charla gratuita para abordar todo esto y mucho más…te esperamos.",
+        "No buscamos solo tu consuelo — buscamos ampliar tu consciencia.",
+      ],
+    },
+    {
+      lines: [
+        "El 13 de mayo de 2026 (19hs) estaremos dando un seminario gratuito para abordar todo esto y mucho más. Te esperamos.",
       ],
     },
   ],
@@ -48,22 +48,22 @@ export const heroContent = {
 
 export const activities = [
   {
-    title: "Terapia grupal",
-    icon: "group",
-    description:
-      "Reuniones pensadas para abrir conversación, sostener procesos y acercarnos a la experiencia del duelo grupalmente con profundidad y cuidado.",
-  },
-  {
     title: "Seminarios",
     icon: "seminar",
     description:
-      "Encuentros para profundizar en la relación entre vida, muerte y vínculo, desde una mirada clara y sensible.",
+      "Para entender más a fondo nuestra experiencia humana y cómo transitar tanto los momentos agradables como los difíciles desde una visión más consciente.",
   },
   {
     title: "Talleres",
     icon: "workshop",
     description:
-      "Experiencias breves y cuidadas para abrir conversación, elaborar sentido y darle lugar a lo que permanece.",
+      "Experiencias vivenciales para trabajar tus propios procesos con guía y profundidad.",
+  },
+  {
+    title: "Terapia grupal",
+    icon: "group",
+    description:
+      "Un espacio sostenido para acompañar duelos junto a otros, con cuidado y presencia.",
   },
 ] as const satisfies readonly {
   readonly title: string;

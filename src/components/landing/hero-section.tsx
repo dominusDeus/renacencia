@@ -38,9 +38,9 @@ export function HeroSection() {
     <Section className="overflow-hidden pt-10 sm:pt-8 lg:pt-8">
       <Container className="relative">
         <div className="hero-stage">
-          <div className="relative z-[1] grid items-start gap-10 lg:grid-cols-[minmax(0,0.78fr)_minmax(0,1fr)] lg:items-stretch lg:gap-14 xl:gap-20">
+          <div className="relative z-[1] grid items-start gap-10 lg:grid-cols-[minmax(0,0.58fr)_minmax(0,1fr)] lg:items-stretch lg:gap-12 xl:gap-16">
             <div className="order-1 lg:flex lg:h-full lg:min-h-0 lg:flex-col lg:self-stretch">
-              <div className="mx-auto w-full max-w-[21rem] lg:mx-0 lg:h-full lg:max-w-[25rem]">
+              <div className="mx-auto w-full max-w-[18rem] lg:mx-0 lg:h-full lg:max-w-[18.5rem] xl:max-w-[19rem]">
                 <MediaFrame className="aspect-[5/8] p-2 sm:p-3 lg:h-full lg:aspect-auto">
                   <div className="relative h-full w-full overflow-hidden rounded-[1.1rem] bg-[var(--color-fg)]">
                     <video
@@ -64,7 +64,7 @@ export function HeroSection() {
             <div
               className={cn(
                 "order-2 flex max-w-[var(--reading-width)] flex-col gap-4 sm:gap-5",
-                "lg:h-full lg:min-h-0 lg:border-l lg:border-stone-200/65 lg:pl-8 xl:pl-10"
+                "lg:h-full lg:min-h-0 lg:border-l lg:border-stone-200/65 lg:pl-7 xl:pl-9"
               )}
             >
               <header className="shrink-0 space-y-2.5 sm:space-y-3">
