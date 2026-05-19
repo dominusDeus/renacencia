@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Instagram, Mail } from "lucide-react";
 
-import { instagramUrl } from "@/components/landing/content";
+import { contactEmail, instagramUrl } from "@/components/landing/content";
 import {
   Container,
   FooterLink,
@@ -51,9 +51,9 @@ export function SiteFooter() {
               <p className="ds-caption text-[var(--color-muted-text)]">
                 contacto
               </p>
-              <FooterLink href="mailto:volviendoalavida@renacencia.com">
+              <FooterLink href={`mailto:${contactEmail}`}>
                 <Mail className="h-4 w-4" />
-                volviendoalavida@renacencia.com
+                {contactEmail}
               </FooterLink>
               <FooterLink href={instagramUrl} target="_blank" rel="noreferrer">
                 <Instagram className="h-4 w-4" />
@@ -95,11 +95,10 @@ export function SiteFooter() {
                         web renacencia.com (en adelante, &quot;el Sitio&quot;).
                         El Sitio es gestionado por el equipo de Renacencia (en
                         adelante, &quot;el Titular&quot;), cuya vía de contacto
-                        principal es volviendoalavida@renacencia.com. El acceso
-                        a la web le atribuye la condición de Usuario, lo cual
-                        implica la aceptación plena y sin reservas de todas y
-                        cada una de las disposiciones incluidas en este Aviso
-                        Legal.
+                        principal es {contactEmail}. El acceso a la web le
+                        atribuye la condición de Usuario, lo cual implica la
+                        aceptación plena y sin reservas de todas y cada una de
+                        las disposiciones incluidas en este Aviso Legal.
                       </p>
                     </section>
 
@@ -161,10 +160,10 @@ export function SiteFooter() {
                         audios y estructura de navegación) está protegida por
                         las leyes de Propiedad Intelectual nacionales e
                         internacionales. Queda terminantemente prohibida la
-                        reproducción, transformación, distribución o
-                        explotación comercial de cualquier elemento del Sitio
-                        sin el consentimiento expreso y por escrito del Titular.
-                        El uso no autorizado dará lugar a las acciones legales
+                        reproducción, transformación, distribución o explotación
+                        comercial de cualquier elemento del Sitio sin el
+                        consentimiento expreso y por escrito del Titular. El uso
+                        no autorizado dará lugar a las acciones legales
                         correspondientes.
                       </p>
                     </section>
@@ -192,10 +191,9 @@ export function SiteFooter() {
                       </h3>
                       <p>
                         El Sitio puede contener enlaces a plataformas externas
-                        (redes sociales, formularios, etc.). El Titular no
-                        asume responsabilidad alguna por las políticas de
-                        privacidad, contenidos o prácticas de dichos sitios
-                        externos.
+                        (redes sociales, formularios, etc.). El Titular no asume
+                        responsabilidad alguna por las políticas de privacidad,
+                        contenidos o prácticas de dichos sitios externos.
                       </p>
                     </section>
 

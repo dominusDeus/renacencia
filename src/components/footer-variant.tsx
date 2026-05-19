@@ -3,6 +3,8 @@ import React from "react";
 import Image from "next/image";
 import { Instagram, Youtube, Facebook } from "lucide-react";
 import { useForm } from "@formspree/react";
+import { contactEmail } from "@/components/landing/content";
+
 import { Checkbox } from "./ui/checkbox";
 import { Textarea } from "./ui/textarea";
 
@@ -57,7 +59,7 @@ const FooterVariant = () => {
           </h3>
           <p className="text-sm mb-4">
             Realiza aquí tu consulta, la responderemos a la brevedad. También
-            puedes escribir a volviendoalavida@renacencia.com
+            puedes escribir a {contactEmail}
           </p>
           {state.succeeded ? (
             <p>Gracias por tu interés!</p>

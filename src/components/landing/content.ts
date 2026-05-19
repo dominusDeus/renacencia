@@ -34,11 +34,6 @@ export const heroContent = {
         "No buscamos solo tu consuelo — buscamos ampliar tu consciencia.",
       ],
     },
-    {
-      lines: [
-        "El 13 de mayo de 2026 (19hs) estaremos dando un seminario gratuito para abordar todo esto y mucho más. Te esperamos.",
-      ],
-    },
   ],
 } as const satisfies {
   readonly kicker: string;
@@ -93,3 +88,4 @@ export const people = [
 export const instagramUrl = "https://www.instagram.com/renacencia.vida/";
 export const seminarUrl =
   "https://docs.google.com/forms/d/e/1FAIpQLSeQD0BumxsIx6WassCzSXblOKnxpFqFtPdajQ9xngSkXkAS9Q/viewform";
+export const contactEmail = "renacencia.ok@gmail.com";

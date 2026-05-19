@@ -99,7 +99,7 @@ export function HeroSection() {
                 ))}
 
                 <div className="pt-1 sm:pt-2 lg:pt-3">
-                  <Button asChild size="lg" className="w-full sm:w-auto">
+                  {/* <Button asChild size="lg" className="w-full sm:w-auto">
                     <Link
                       href={seminarUrl}
                       target="_blank"
@@ -109,7 +109,7 @@ export function HeroSection() {
                       INSCRIBITE AQUÍ AL SEMINARIO
                       <ArrowUpRight className="h-4 w-4" />
                     </Link>
-                  </Button>
+                  </Button> */}
                 </div>
               </div>
             </div>

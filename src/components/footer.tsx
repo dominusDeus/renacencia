@@ -1,6 +1,9 @@
 import Image from "next/image";
 import { Phone, Mail } from "lucide-react";
+import { contactEmail } from "@/components/landing/content";
+
 import FooterImage from "../../public/images/footer-bg.jpg";
+
 const Footer = () => {
   return (
     <footer className="relative bg-brand-brown p-2 md:flex md:flex-col md:items-center mx-auto w-full">
@@ -67,7 +70,7 @@ const Footer = () => {
                   </span>{" "}
                 </p>
                 <p className="text-xs md:text-sm font-bold py-2 underline">
-                  volviendoalavida@renacencia.com
+                  {contactEmail}
                 </p>
                 <p className="text-xs md:text-sm">
                   Respondemos a todas las consultas en un plazo máximo de 24
