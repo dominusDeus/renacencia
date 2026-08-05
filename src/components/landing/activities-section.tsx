@@ -1,7 +1,12 @@
+import {
+  HeartHandshake,
+  type LucideIcon,
+  MessageCircleHeart,
+  Presentation,
+} from "lucide-react";
 import Link from "next/link";
-import { BookOpen, Sparkles, UsersRound, type LucideIcon } from "lucide-react";
 
-import { activities } from "@/components/landing/content";
+import { activities, whatsappUrl } from "@/components/landing/content";
 import {
   Container,
   Section,
@@ -12,19 +17,16 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 const activityIcons = {
-  group: UsersRound,
-  seminar: BookOpen,
-  workshop: Sparkles,
+  group: HeartHandshake,
+  seminar: Presentation,
+  workshop: MessageCircleHeart,
 } satisfies Record<(typeof activities)[number]["icon"], LucideIcon>;
 
 export function ActivitiesSection() {
   return (
     <Section id="servicios" className="scroll-mt-24">
       <Container>
-        <SectionTitle
-          title="¿Qué hacemos?"
-          description="Renacencia es un espacio para mirar la muerte de frente para descubrir otro modo de apreciar la vida. Lo hacemos a través de:"
-        />
+        <SectionTitle title="¿Qué hacemos?" description="" />
 
         <div className="relative mt-10 lg:mt-14">
           <div
@@ -42,7 +44,7 @@ export function ActivitiesSection() {
                     "group relative flex h-full flex-col gap-4 overflow-hidden sm:gap-5",
                     "border-stone-200/90 shadow-[0_1px_0_rgba(255,255,255,0.9)_inset]",
                     "transition-[box-shadow,border-color,transform] duration-300 ease-out",
-                    "hover:-translate-y-0.5 hover:border-stone-300/95 hover:shadow-[var(--shadow-soft)]"
+                    "hover:-translate-y-0.5 hover:border-stone-300/95 hover:shadow-[var(--shadow-soft)]",
                   )}
                 >
                   <div
@@ -58,7 +60,7 @@ export function ActivitiesSection() {
                         "transition-[color,transform,border-color,box-shadow] duration-300",
                         "group-hover:border-[var(--color-accent)]/40 group-hover:text-[var(--color-accent-hover)]",
                         "group-hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.98),0_12px_30px_-12px_rgba(249,115,22,0.38)]",
-                        "motion-safe:group-hover:scale-[1.02]"
+                        "motion-safe:group-hover:scale-[1.02]",
                       )}
                     >
                       <Icon
@@ -71,7 +73,7 @@ export function ActivitiesSection() {
                       {activity.title}
                     </h3>
                   </div>
-                  <p className="ds-body text-[var(--color-muted-text)] leading-relaxed">
+                  <p className="ds-body whitespace-pre-line text-[var(--color-muted-text)] leading-relaxed">
                     {activity.description}
                   </p>
                 </SimpleCard>
@@ -81,7 +83,9 @@ export function ActivitiesSection() {
 
           <div className="relative mt-8 flex justify-center rounded-[1.75rem] border-[var(--color-border-subtle)] bg-[linear-gradient(180deg,rgba(255,250,245,0.92)_0%,rgba(255,255,255,0.82)_100%)] px-6 py-7 shadow-[0_18px_50px_-38px_rgba(12,10,9,0.35)] sm:px-8 sm:py-8 lg:mt-10">
             <Button asChild size="lg" className="w-full sm:w-auto">
-              <Link href="#contacto">Quiero Saber Más</Link>
+              <Link href={whatsappUrl} target="_blank" rel="noreferrer">
+                Quiero Saber Más
+              </Link>
             </Button>
           </div>
         </div>

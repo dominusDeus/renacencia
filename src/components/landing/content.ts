@@ -43,16 +43,16 @@ export const heroContent = {
 
 export const activities = [
   {
-    title: "Seminarios",
+    title: "Seminarios y Talleres",
     icon: "seminar",
     description:
       "Para entender más a fondo nuestra experiencia humana y cómo transitar tanto los momentos agradables como los difíciles desde una visión más consciente.",
   },
   {
-    title: "Talleres",
+    title: "Sesiones 1:1",
     icon: "workshop",
     description:
-      "Experiencias vivenciales para trabajar tus propios procesos con guía y profundidad.",
+      "¿Sientes que tras su muerte cambiaste dentro? Te acompaño a transformar el DUELO en una nueva forma de vivir.",
   },
   {
     title: "Terapia grupal",
@@ -86,6 +86,7 @@ export const people = [
 ] as const;
 
 export const instagramUrl = "https://www.instagram.com/renacencia.vida/";
+export const whatsappUrl = "https://wa.me/34624840232";
 export const seminarUrl =
   "https://docs.google.com/forms/d/e/1FAIpQLSeQD0BumxsIx6WassCzSXblOKnxpFqFtPdajQ9xngSkXkAS9Q/viewform";
 export const contactEmail = "renacencia.ok@gmail.com";
